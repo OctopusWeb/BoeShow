@@ -1,0 +1,34 @@
+{
+  "name": "boeshow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpFile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OctopusWeb/BoeShow.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OctopusWeb/BoeShow/issues"
+  },
+  "homepage": "https://github.com/OctopusWeb/BoeShow#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-changed": "^2.0.0",
+    "gulp-clean": "^0.3.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "gulp-webserver": "^0.9.1",
+    "imagemin-pngquant": "^5.0.0",
+    "rename": "^1.0.4"
+  }
+}

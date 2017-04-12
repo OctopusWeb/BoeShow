@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+$BackColor:#081636 #11234f;
+
+$NomalWidth:1080px; 
+$NomalHeight:1920px; 
+
+@mixin top-gradient{
+    background:-webkit-linear-gradient(top, nth($BackColor,1), nth($BackColor,2));
+    background:-o-linear-gradient(top, nth($BackColor,1), nth($BackColor,2));
+    background:-moz-linear-gradient(top, nth($BackColor,1), nth($BackColor,2));
+    background:linear-gradient(to bottom, nth($BackColor,1), nth($BackColor,2));
+}
+
+html,body{
+    font-family: "微软雅黑";
+    width: $NomalWidth;
+    height: $NomalHeight;
+    #wrap{
+        @include top-gradient;
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width:$NomalWidth;
+        height:$NomalHeight;
+    }
+}

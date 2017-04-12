@@ -1,0 +1,7 @@
+@charset "UTF-8";
+html, body { font-family: "微软雅黑"; width: 1080px; height: 1920px; }
+html #wrap, body #wrap { background: -webkit-linear-gradient(top, #081636, #11234f); background: -o-linear-gradient(top, #081636, #11234f); background: -moz-linear-gradient(top, #081636, #11234f); background: linear-gradient(to bottom, #081636, #11234f); position: absolute; display: block; top: 0; left: 0; width: 1080px; height: 1920px; }
+
+
+
+/*# sourceMappingURL=maps/pageStyle.css.map */
