@@ -1,1 +1,1 @@
-{"version":3,"sources":["initController.js"],"names":["$"],"mappings":"AAAAA,EAAE","file":"../initController.js","sourcesContent":["$(function(){\r\n\t\r\n})\r\n"]}
+{"version":3,"sources":["initController.js"],"names":["$","homeController","HomeController","carMove","show"],"mappings":"AAAAA,EAAE,WACD,GAAIC,GAAiB,GAAIC,eACzBD,GAAeE,UACfF,EAAeG","file":"../initController.js","sourcesContent":["$(function(){\r\n\tvar homeController = new HomeController;\r\n\thomeController.carMove();\r\n\thomeController.show();\r\n})\r\n"]}

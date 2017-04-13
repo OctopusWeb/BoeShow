@@ -1,9 +1,11 @@
 @charset "utf-8";
 
 $BackColor:#081636 #11234f;
+$DeepColor:#c5d5ec #7d9fc5;
 
 $NomalWidth:1080px; 
 $NomalHeight:1920px; 
+$FontColor:#bbcfea;
 
 @mixin top-gradient{
     background:-webkit-linear-gradient(top, nth($BackColor,1), nth($BackColor,2));
@@ -11,11 +13,16 @@ $NomalHeight:1920px;
     background:-moz-linear-gradient(top, nth($BackColor,1), nth($BackColor,2));
     background:linear-gradient(to bottom, nth($BackColor,1), nth($BackColor,2));
 }
+@mixin deep-gradient{
+    background:-webkit-linear-gradient(top, nth($DeepColor,1), nth($DeepColor,2));
+    background:-o-linear-gradient(top, nth($DeepColor,1), nth($DeepColor,2));
+    background:-moz-linear-gradient(top, nth($DeepColor,1), nth($DeepColor,2));
+    background:linear-gradient(to bottom, nth($DeepColor,1), nth($DeepColor,2));
+}
 
 html,body{
     font-family: "微软雅黑";
-    width: $NomalWidth;
-    height: $NomalHeight;
+    overflow: hidden;
     #wrap{
         @include top-gradient;
         position: absolute;
@@ -24,5 +31,14 @@ html,body{
         left: 0;
         width:$NomalWidth;
         height:$NomalHeight;
+        #content{
+            width: $NomalWidth;
+            height: $NomalHeight;
+        }
     }
 }
+
+
+@import "top";
+@import "menu";
+@import "home";

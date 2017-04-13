@@ -1,6 +1,46 @@
 @charset "UTF-8";
-html, body { font-family: "微软雅黑"; width: 1080px; height: 1920px; }
+html, body { font-family: "微软雅黑"; overflow: hidden; }
 html #wrap, body #wrap { background: -webkit-linear-gradient(top, #081636, #11234f); background: -o-linear-gradient(top, #081636, #11234f); background: -moz-linear-gradient(top, #081636, #11234f); background: linear-gradient(to bottom, #081636, #11234f); position: absolute; display: block; top: 0; left: 0; width: 1080px; height: 1920px; }
+html #wrap #content, body #wrap #content { width: 1080px; height: 1920px; }
+
+#top { width: 1080px; }
+#top #escBtn { width: 47px; height: 47px; position: absolute; left: 37px; top: 43px; }
+#top #escBtn img { position: absolute; width: 47px; height: 47px; top: 0; left: 0; display: none; }
+#top #escBtn .selected { display: block; }
+#top #timeInfo { position: absolute; line-height: 30px; font-size: 26px; color: #bbcfea; width: 300px; top: 50px; left: 100px; }
+#top #timeInfo div { float: left; margin-left: 15px; }
+#top #power { position: absolute; left: 750px; top: 55px; }
+#top #power ul { position: absolute; width: 200px; }
+#top #power ul li { float: left; list-style: none; margin-left: 4px; }
+#top #power p { position: absolute; color: #bbcfea; left: 90px; font-size: 24px; top: -5px; }
+#top #power span { position: absolute; color: #bbcfea; left: 170px; font-size: 24px; top: -5px; }
+
+#menu { position: absolute; top: 1770px; width: 1080px; height: 150px; left: 0; }
+#menu img { height: 150px; width: 1080px; position: absolute; }
+#menu ul { position: absolute; height: 150px; width: 1080px; position: absolute; }
+#menu ul li { width: 25%; float: left; height: 150px; list-style: none; background: transparent; }
+
+#home { position: absolute; top: 150px; height: 1680px; width: 1080px; left: 0; }
+#home #bk { width: 1080px; position: absolute; top: 500px; }
+#home #carName { left: 55px; top: 60px; position: absolute; }
+#home #carTitle { position: absolute; width: 442px; height: 400px; top: 60px; left: 590px; }
+#home #carTitle img { width: 442px; height: 319px; position: absolute; left: 0; top: 0; }
+#home #carTitle #carNum { width: 442px; }
+#home #carTitle #carNum p { float: left; width: 70px; text-align: center; color: #bbcfea; font-size: 30px; margin-top: -10px; }
+#home #carTitle #carNum .carNext { margin-left: 180px; }
+#home #carTitle .proBar { width: 440px; height: 60px; float: left; margin-top: 50px; }
+#home #carTitle .proBar p { color: #c7d6ed; font-size: 24px; width: 100%; text-align: right; margin-top: -6px; }
+#home #carTitle .proBar .box { width: 100%; background: #061029; height: 30px; float: left; margin-top: 15px; border-radius: 15px; }
+#home #carTitle .proBar .box .bar { width: 0%; height: 22px; border-radius: 11px; float: left; margin-top: 4px; background: -webkit-linear-gradient(top, #c5d5ec, #7d9fc5); background: -o-linear-gradient(top, #c5d5ec, #7d9fc5); background: -moz-linear-gradient(top, #c5d5ec, #7d9fc5); background: linear-gradient(to bottom, #c5d5ec, #7d9fc5); margin-left: 3px; }
+#home #carPower { width: 820px; height: 160px; position: absolute; left: 140px; top: 1377px; }
+#home #carPower p { font-size: 34px; color: #6f91be; float: left; margin-top: 80px; }
+#home #carPower #carnext { float: right; }
+#home #carPower span { font-size: 40px; color: #89abd8; position: absolute; left: 350px; top: 0; }
+#home #carPower #powerBar { width: 490px; height: 66px; position: absolute; background: url(../img/top/powerBk.png); left: 160px; top: 90px; }
+#home #carPower #powerBar .powerBar1 { margin-left: 28px; }
+#home #carPower #powerBar .powerBar2 { background: url(../img/top/powerbK3.png); width: 0px; }
+#home #carPower #powerBar .powerBar { height: 42px; float: left; }
+#home #carPic { position: absolute; left: -50px; width: 1200px; height: 600px; top: 600px; }
 
 
 

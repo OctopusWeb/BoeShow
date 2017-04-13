@@ -1,0 +1,62 @@
+#top{
+    width: $NomalWidth;
+    #escBtn{
+        width: 47px;
+        height: 47px;
+        position: absolute;
+        left: 37px;
+        top: 43px;
+        img{
+            position: absolute;
+            width: 47px;
+            height: 47px;
+            top: 0;
+            left: 0;
+            display: none;
+        }
+        .selected{
+            display: block;
+        }
+    }
+    #timeInfo{
+        position: absolute;
+        line-height: 30px;
+        font-size: 26px;
+        color: $FontColor;
+        width: 300px;
+        top: 50px;
+        left: 100px;
+        div{
+            float: left;
+            margin-left: 15px
+        }
+    }
+    #power{
+        position: absolute;
+        left: 750px;
+        top: 55px;
+        ul{
+            position: absolute;
+            width: 200px;
+            li{
+                float: left;
+                list-style: none;
+                margin-left: 4px;
+            }
+        }
+        p{
+            position: absolute;
+            color: $FontColor;
+            left: 90px;
+            font-size: 24px;
+            top: -5px;
+        }
+        span{
+            position: absolute;
+            color: $FontColor;
+            left: 170px;
+            font-size: 24px;
+            top: -5px;
+        }
+    }
+}

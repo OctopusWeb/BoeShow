@@ -1,0 +1,2 @@
+var $at={};$at.ButtonHover=function(t){},$at.CanvasMove=function(t,a,e){var n=document.getElementById("carCanvas");if(null==n)return!1;var r=n.getContext("2d");r.clearRect(0,0,a,e),r.drawImage(t,0,0)},$at.PictureSoure=function(t,a,e){for(var n=[],r=e-a,u=0;u<r;u++){var c=new Image;c.src=t+u+".png",n.push(c)}return n},$at.NumberAnimate=function(t,a,e){var n=t,r=a-t,u=1e3/r,c=setInterval(function(){n++,n==a&&clearInterval(c),e(n)},u)};
+//# sourceMappingURL=maps/publicController.js.map

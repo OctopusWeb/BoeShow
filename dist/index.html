@@ -2,26 +2,120 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		<title>BOE多媒体展项</title>
 		<link rel="stylesheet" href="assets/css/reset.css" />
 		<link rel="stylesheet" href="assets/css/pageStyle.css" />
 	</head>
-	<body>
+	<body oncontextmenu="return false" onselectstart="return false">
 		<div id="wrap">
 			<div id="top">
+				<div id="escBtn">
+					<img src="assets/img/top/esc.png" class="selected"/>
+					<img src="assets/img/top/esc-hover.png" />
+				</div>
+				<div id="timeInfo">
+					<div id="dayTime">2017-03-25</div>
+					<div id="week">TUES</div>
+				</div>
+				<div id="power">
+					<ul>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+					</ul>
+					<ul id="powerImg">
+						<li><img src="assets/img/top/power2.png"/></li>
+						<li><img src="assets/img/top/power2.png"/></li>
+						<li><img src="assets/img/top/power2.png"/></li>
+						<li><img src="assets/img/top/power2.png"/></li>
+						<li><img src="assets/img/top/power2.png"/></li>
+						<li><img src="assets/img/top/power2.png"/></li>
+						<li><img src="assets/img/top/power2.png"/></li>
+					</ul>
+					<p>90%</p>
+					<span>27℃</span>
+				</div>
 				<img src="assets/img/top/title.png" class="bk" ondragstart="return false;"/>
 			</div>
 			<div id="content">
-				<div id="home"></div>
+				<div id="home">
+					<img src="assets/img/top/bk.png" id="bk"/>
+					<div id="carName">
+						<img src="assets/img/top/carName.png"/>
+					</div>
+					<div id="carTitle">
+						<img src="assets/img/top/carTitle.png"/>
+						<div id="carNum">
+							<p>0℃</p>
+							<p class="carNext">0℃</p>
+						</div>
+						<div class="proBar">
+							<p>0</p>
+							<div class="box">
+								<div class="bar"></div>
+							</div>
+						</div>
+						<div class="proBar">
+							<p>0</p>
+							<div class="box">
+								<div class="bar"></div>
+							</div>
+						</div>
+						<div class="proBar">
+							<p>0</p>
+							<div class="box">
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+					<div id="carPic">
+						<canvas id="carCanvas" width="1200" height="600"></canvas>
+					</div>
+					<div id="carBk"></div>
+					<div id="carPower">
+						<p>0%</p>
+						<p id="carnext">100%</p>
+						<span>0%</span>
+						<div id="powerBar">
+							<div class="powerBar1 powerBar">
+								<img src="assets/img/top/powerbK1.png"/>
+							</div>
+							<div class="powerBar2 powerBar"></div>
+							<div class="powerBar3 powerBar">
+								<img src="assets/img/top/powerbK2.png"/>
+							</div>
+						</div>
+					</div>
+				</div>
 				<div id="music"></div>
 				<div id="location"></div>
 				<div id="data"></div>
 				<div id="form"></div>
 				<div id="call"></div>
 			</div>
-			<div id="menu"></div>
+			<div id="menu">
+				<img src="assets/img/top/menu.png"/>
+				<ul>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
 		</div>
 	</body>
 	<script type="text/javascript" src="assets/js/bin/jquery.min.js" ></script>
+	<script type="text/javascript" src="assets/js/bin/hammer.min.js" ></script>
 	<script type="text/javascript" src="assets/js/bin/TweenMax.min.js" ></script>
+	<script type="text/javascript" src="assets/js/publicController.js"></script>
+	
+	<script  type="text/javascript" src="assets/js/initController.js"></script>
+	<script  type="text/javascript" src="assets/js/homeController.js"></script>
 </html>
