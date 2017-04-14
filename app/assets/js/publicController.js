@@ -2,8 +2,8 @@ var $at = {};
 $at.ButtonHover = function(dom){
 	
 }
-$at.CanvasMove = function(image,width,height){
-	var canvas = document.getElementById("carCanvas")
+$at.CanvasMove = function(image,width,height,id){
+	var canvas = document.getElementById(id)
     if (canvas == null)
         return false;
     var context = canvas.getContext("2d");

@@ -45,7 +45,8 @@ html #wrap #content .page, body #wrap #content .page { position: absolute; top: 
 #home #carPower #powerBar .powerBar1 { margin-left: 28px; }
 #home #carPower #powerBar .powerBar2 { background: url(../img/top/powerbK3.png); width: 0px; }
 #home #carPower #powerBar .powerBar { height: 42px; float: left; }
-#home #carPic { position: absolute; width: 1080px; height: 650px; top: 650px; }
+#home #carPic { position: absolute; width: 1080px; height: 650px; top: 750px; z-index: 100; }
+#home #carBkPic { position: absolute; width: 1080px; height: 300px; top: 900px; left: -10px; }
 
 #locationVideo { position: absolute; top: -150px; left: 0; }
 

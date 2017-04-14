@@ -8,14 +8,23 @@ var HomeController = (function(){
 		var carSoure = $at.PictureSoure("assets/img/car/s__00",0,72);
 		var hammer = new Hammer(document.getElementById("carPic"));
 		setTimeout(function(){
-			$at.CanvasMove(carSoure[carNum],1200,600);
+			$at.CanvasMove(carSoure[carNum],1080,600,"carCanvas");
 		},100);
 		hammer.on("pan", function (e) {
 			carNum = parseInt(e.deltaX/3);
 			carNum>=72?carNum=carNum%72:carNum=carNum;
 			carNum<0?carNum=71+carNum%72:carNum=carNum;
-			$at.CanvasMove(carSoure[carNum],1200,600);
-	   });
+			$at.CanvasMove(carSoure[carNum],1080,600,"carCanvas");
+	  }); 
+	}
+	function carBkMove(){
+		var carBkNum=0;
+		var carBkSoure = $at.PictureSoure("assets/img/carBk/s1_00",0,100);
+		setInterval(function(){
+			carBkNum++
+			carBkNum == 100?carBkNum=0:carBkNum=carBkNum;
+			$at.CanvasMove(carBkSoure[carBkNum],1080,300,"carBkCanvas");
+		},100)
 	}
 	function show(){
 		hide();
@@ -57,6 +66,7 @@ var HomeController = (function(){
 	function init(){
 		var home={};
 		home.carMove = carMove;
+		home.carBkMove = carBkMove;
 		home.show = show;
 		home.hide = hide;
 		return home;

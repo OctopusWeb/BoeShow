@@ -4,12 +4,12 @@ $(function(){
 	var safaController = new SafaController;
 	safaController.tip();
 	var dataController = new DataController;
-	dataController.tip(); 
-	
+	dataController.tip();
+	homeController.carMove();
+	homeController.carBkMove();
 	$("#homeBtn").on("click",function(){
 		$("#escBtn").show();
 		$("#homeBtn").hide();
-		homeController.carMove();
 		homeController.show();
 		$at.PageAnimate($("#home"));
 		$("#menu li").removeClass("selected");

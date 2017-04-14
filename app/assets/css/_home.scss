@@ -108,12 +108,20 @@
                 height: 42px;
                 float: left;
             }
-        }
+        } 
     }
     #carPic{
         position: absolute;
         width: 1080px;
         height: 650px;
-        top: 650px;
+        top: 750px;
+        z-index: 100;
+    }
+    #carBkPic{
+        position: absolute;
+        width: 1080px;
+        height: 300px;
+        top: 900px;
+        left: -10px;
     }
 }
