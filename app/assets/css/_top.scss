@@ -1,6 +1,9 @@
 #top{
+    position: absolute;
     width: $NomalWidth;
+    z-index: 100;
     #escBtn{
+        display: none;
         width: 47px;
         height: 47px;
         position: absolute;
@@ -12,10 +15,26 @@
             height: 47px;
             top: 0;
             left: 0;
+        }
+        .selected:active{
             display: none;
         }
-        .selected{
-            display: block;
+    }
+    #homeBtn{       
+        width: 47px;
+        height: 47px;
+        position: absolute;
+        left: 37px;
+        top: 43px;
+        img{
+            position: absolute;
+            width: 47px;
+            height: 47px;
+            top: 0;
+            left: 0;
+        }
+        .selected:active{
+            display: none;
         }
     }
     #timeInfo{

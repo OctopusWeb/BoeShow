@@ -1,2 +1,2 @@
-$(function(){var o=new HomeController;o.carMove(),o.show()});
+$(function(){var e=[$("#home"),$("#music"),$("#location"),$("#data"),$("#form"),$("#call")],n=new HomeController;(new SafaController).tip();var o=new DataController;o.tip(),$("#homeBtn").on("click",function(){$("#escBtn").show(),$("#homeBtn").hide(),n.carMove(),n.show(),$at.PageAnimate($("#home")),$("#menu li").removeClass("selected")}),$("#homeBtn").trigger("click"),$("#menu").on("click","li",function(){$("#escBtn").hide(),$("#homeBtn").show();var n=$("#menu li").index($(this));$at.PageAnimate(e[n+1]),$("#menu li").removeClass("selected"),$(this).addClass("selected"),2==n&&o.page1Show()})});
 //# sourceMappingURL=maps/initController.js.map

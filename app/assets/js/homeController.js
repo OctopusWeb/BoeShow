@@ -5,7 +5,7 @@ var HomeController = (function(){
 	var carPower = $("#carPower");
 	function carMove(){
 		var carNum=0;
-		var carSoure = $at.PictureSoure("assets/img/car/s_00",0,72);
+		var carSoure = $at.PictureSoure("assets/img/car/s__00",0,72);
 		var hammer = new Hammer(document.getElementById("carPic"));
 		setTimeout(function(){
 			$at.CanvasMove(carSoure[carNum],1200,600);
@@ -18,7 +18,12 @@ var HomeController = (function(){
 	   });
 	}
 	function show(){
+		hide();
 		$at.NumberAnimate(0,100,homeInterver);
+		proBar.eq(0).find(".bar").animate({width:53+"%"},1000);
+		proBar.eq(1).find(".bar").animate({width:87+"%"},1000);
+		proBar.eq(2).find(".bar").animate({width:22+"%"},1000);
+		carPower.find(".powerBar2").animate({width:282+"px"},1000);
 		function homeInterver(num){ 
 			var interior1 = parseInt(num*0.25);
 			interior.eq(0).html(interior1+"℃");
@@ -28,30 +33,26 @@ var HomeController = (function(){
 			var proBarnum1 = parseInt(num*3.53)
 			var proBarnum2 = parseInt(num*0.24)
 			var proBarnum3 = parseInt(num*1.13)
-			var proBarwid1 = parseInt(num*0.53)
-			var proBarwid2 = parseInt(num*0.84)
-			var proBarwid3 = parseInt(num*0.13)
 			proBar.eq(0).find("p").html(proBarnum1);
 			proBar.eq(1).find("p").html(proBarnum2);
 			proBar.eq(2).find("p").html(proBarnum3);
-			proBar.eq(0).find(".bar").width(proBarwid1+"%");
-			proBar.eq(1).find(".bar").width(proBarwid2+"%");
-			proBar.eq(2).find(".bar").width(proBarwid3+"%");
 			
-			var carPowernum = parseInt(num*0.82);
-			var carPowerwid = parseInt(num*4*0.82)
-			carPower.find("span").html(carPowernum+"%");
-			carPower.find(".powerBar2").width(carPowerwid+"px");
+			var carPowerwid = parseInt(num*0.82)
+			carPower.find("span").html(carPowerwid+"%");
 		}
-//		$at.NumberAnimate(123,242,"",proNum1);
-//		function proBar1(str){
-//			var self = proBar.eq(0);
-//			self.find("p").html(str);
-//			self.find("bar").width()
-//		}
 	}
+	
 	function hide(){
-		console.log("hide");
+		proBar.find(".bar").eq(0).width(0);
+		proBar.find(".bar").eq(1).width(0);
+		proBar.find(".bar").eq(2).width(0);
+		interior.eq(0).html(0+"℃");
+		interior.eq(1).html(0+"℃");
+		proBar.eq(0).find("p").html(0);
+		proBar.eq(1).find("p").html(0);
+		proBar.eq(2).find("p").html(0);
+		carPower.find("span").html(0+"%");
+		carPower.find(".powerBar2").width(0+"%");
 	}
 	function init(){
 		var home={};

@@ -1,9 +1,5 @@
 #home{
-    position: absolute;
-    top: 150px;
-    height: 1680px;
-    width: $NomalWidth;
-    left: 0;
+   
     #bk{
         width: $NomalWidth;
         position: absolute;
@@ -116,9 +112,8 @@
     }
     #carPic{
         position: absolute;
-        left: -50px;
-        width: 1200px;
-        height: 600px;
-        top: 600px;
+        width: 1080px;
+        height: 650px;
+        top: 650px;
     }
 }

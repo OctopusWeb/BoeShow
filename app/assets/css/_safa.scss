@@ -1,0 +1,31 @@
+#form{
+    video{
+        position: absolute;top: -150px;left: 0px;
+    }
+    #safaTip{
+        width: 612px;
+        margin-left: -306px;
+    }
+}
+.tipBtn{
+    position: absolute;
+    left: 50%;
+    top: 66px;
+    height: 80px;
+    .tipBk{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .tipTitle{
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+    }
+    .selected{
+        display: block;
+    }
+}
+

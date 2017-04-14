@@ -1,0 +1,132 @@
+#data{
+    #dataTip{
+        width: 612px;
+        margin-left: -306px;
+    }
+    #data2{
+        display: none;
+        ul li{
+            line-height: 145px;
+            margin-bottom: 0;
+            margin-top: 90px;
+            font-size: 30px;
+            strong{
+                font-size: 16px;
+            }
+        }
+        .dataList p{
+            width: 34%;
+            margin-left: 0;
+            padding-left: 210px;
+            line-height: 80px;
+            font-size: 30px;
+        }
+    }
+    .data{
+        position: absolute;
+        width: 1080px;
+        height: 1300px;
+        .data1Bk{
+            top: 242px;
+            left: 80px;
+            width: 920px;
+            position: absolute;
+        }
+        ul{
+            top: 242px;
+            left: 80px;
+            width: 920px;
+            position: absolute;
+            height: 920px;
+            li{
+                float: left;
+                width: 25%;
+                text-align: center;
+                color: #fff;
+                list-style: none;
+                font-size: 40px;
+                line-height: 210px;
+                margin-bottom: 15px;
+                strong{
+                    font-size: 20px;
+                    font-weight: 300;
+                }
+            }
+        }
+        .round1{
+            position: absolute;
+            width: 100%;
+            top: 760px;
+            left: 0;
+        }
+        .round2{
+            position: absolute;
+            width: 100%;
+            top: 870px;
+            left: 0;
+        }
+        .dataInfo{
+            position: absolute;
+            top: 790px;
+            left: 170px;
+            height: 130px;
+            div{
+                position: absolute;
+                width: 66px;
+                height: 66px;
+                img{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                }
+            }
+            p{
+                position: absolute;
+                top: -20px;
+                width: 50px;
+                width: 80px;
+                text-align: center;
+                font-size: 12px;
+                color: #ccc;
+                left: -10px;
+            }
+            .o1{top: 80px;left: 95px;}
+            .o2{
+                height: 96px;
+                width: 96px;
+                top: 30px;
+                left: 315px;
+                p{font-size: 16px;width: 116px;top: -30px;}
+            }
+            .o3{top: 80px;left: 575px;}
+            .selected{.o{display: none;}}
+        }
+        .dataList{
+            position: absolute;
+            width: 950px;
+            height: 500px;
+            left: 65px;
+            top: 970px;
+            img{
+                position: absolute;
+                width: 100%;
+                left: 0;
+                top: 65px;
+            }
+            p{
+                float: left;
+                width: 50%;
+                text-align: left;
+                font-size: 50px;
+                color: #fff;
+                margin-left: 480px;
+                line-height: 190px;
+                font-weight: 400;
+                strong{
+                    font-size: 20px;
+                    font-weight: 200;
+                }
+            }
+        }
+    }
+}

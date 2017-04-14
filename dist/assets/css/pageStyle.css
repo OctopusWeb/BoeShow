@@ -1,12 +1,17 @@
-@charset "UTF-8";
-html, body { font-family: "微软雅黑"; overflow: hidden; }
+@font-face { font-family: numberFont; src: url("../font/DIN-Medium.otf"); }
+@font-face { font-family: stringFont; src: url("../font/PingFangMedium.ttf"); }
+html, body { font-family: numberFont; overflow: hidden; }
 html #wrap, body #wrap { background: -webkit-linear-gradient(top, #081636, #11234f); background: -o-linear-gradient(top, #081636, #11234f); background: -moz-linear-gradient(top, #081636, #11234f); background: linear-gradient(to bottom, #081636, #11234f); position: absolute; display: block; top: 0; left: 0; width: 1080px; height: 1920px; }
 html #wrap #content, body #wrap #content { width: 1080px; height: 1920px; }
+html #wrap #content .page, body #wrap #content .page { position: absolute; top: 150px; height: 1680px; width: 1080px; left: -1080px; opacity: 0; }
 
-#top { width: 1080px; }
-#top #escBtn { width: 47px; height: 47px; position: absolute; left: 37px; top: 43px; }
-#top #escBtn img { position: absolute; width: 47px; height: 47px; top: 0; left: 0; display: none; }
-#top #escBtn .selected { display: block; }
+#top { position: absolute; width: 1080px; z-index: 100; }
+#top #escBtn { display: none; width: 47px; height: 47px; position: absolute; left: 37px; top: 43px; }
+#top #escBtn img { position: absolute; width: 47px; height: 47px; top: 0; left: 0; }
+#top #escBtn .selected:active { display: none; }
+#top #homeBtn { width: 47px; height: 47px; position: absolute; left: 37px; top: 43px; }
+#top #homeBtn img { position: absolute; width: 47px; height: 47px; top: 0; left: 0; }
+#top #homeBtn .selected:active { display: none; }
 #top #timeInfo { position: absolute; line-height: 30px; font-size: 26px; color: #bbcfea; width: 300px; top: 50px; left: 100px; }
 #top #timeInfo div { float: left; margin-left: 15px; }
 #top #power { position: absolute; left: 750px; top: 55px; }
@@ -18,9 +23,9 @@ html #wrap #content, body #wrap #content { width: 1080px; height: 1920px; }
 #menu { position: absolute; top: 1770px; width: 1080px; height: 150px; left: 0; }
 #menu img { height: 150px; width: 1080px; position: absolute; }
 #menu ul { position: absolute; height: 150px; width: 1080px; position: absolute; }
-#menu ul li { width: 25%; float: left; height: 150px; list-style: none; background: transparent; }
+#menu ul li { width: 20%; float: left; height: 150px; list-style: none; background: transparent; }
+#menu ul .selected { background: rgba(58, 141, 232, 0.5); }
 
-#home { position: absolute; top: 150px; height: 1680px; width: 1080px; left: 0; }
 #home #bk { width: 1080px; position: absolute; top: 500px; }
 #home #carName { left: 55px; top: 60px; position: absolute; }
 #home #carTitle { position: absolute; width: 442px; height: 400px; top: 60px; left: 590px; }
@@ -40,7 +45,43 @@ html #wrap #content, body #wrap #content { width: 1080px; height: 1920px; }
 #home #carPower #powerBar .powerBar1 { margin-left: 28px; }
 #home #carPower #powerBar .powerBar2 { background: url(../img/top/powerbK3.png); width: 0px; }
 #home #carPower #powerBar .powerBar { height: 42px; float: left; }
-#home #carPic { position: absolute; left: -50px; width: 1200px; height: 600px; top: 600px; }
+#home #carPic { position: absolute; width: 1080px; height: 650px; top: 650px; }
+
+#locationVideo { position: absolute; top: -150px; left: 0; }
+
+#form video { position: absolute; top: -150px; left: 0px; }
+#form #safaTip { width: 612px; margin-left: -306px; }
+
+.tipBtn { position: absolute; left: 50%; top: 66px; height: 80px; }
+.tipBtn .tipBk { position: absolute; top: 0; left: 0; width: 100%; }
+.tipBtn .tipTitle { position: absolute; top: 0; left: 0; display: none; }
+.tipBtn .selected { display: block; }
+
+#data #dataTip { width: 612px; margin-left: -306px; }
+#data #data2 { display: none; }
+#data #data2 ul li { line-height: 145px; margin-bottom: 0; margin-top: 90px; font-size: 30px; }
+#data #data2 ul li strong { font-size: 16px; }
+#data #data2 .dataList p { width: 34%; margin-left: 0; padding-left: 210px; line-height: 80px; font-size: 30px; }
+#data .data { position: absolute; width: 1080px; height: 1300px; }
+#data .data .data1Bk { top: 242px; left: 80px; width: 920px; position: absolute; }
+#data .data ul { top: 242px; left: 80px; width: 920px; position: absolute; height: 920px; }
+#data .data ul li { float: left; width: 25%; text-align: center; color: #fff; list-style: none; font-size: 40px; line-height: 210px; margin-bottom: 15px; }
+#data .data ul li strong { font-size: 20px; font-weight: 300; }
+#data .data .round1 { position: absolute; width: 100%; top: 760px; left: 0; }
+#data .data .round2 { position: absolute; width: 100%; top: 870px; left: 0; }
+#data .data .dataInfo { position: absolute; top: 790px; left: 170px; height: 130px; }
+#data .data .dataInfo div { position: absolute; width: 66px; height: 66px; }
+#data .data .dataInfo div img { position: absolute; left: 0; top: 0; }
+#data .data .dataInfo p { position: absolute; top: -20px; width: 50px; width: 80px; text-align: center; font-size: 12px; color: #ccc; left: -10px; }
+#data .data .dataInfo .o1 { top: 80px; left: 95px; }
+#data .data .dataInfo .o2 { height: 96px; width: 96px; top: 30px; left: 315px; }
+#data .data .dataInfo .o2 p { font-size: 16px; width: 116px; top: -30px; }
+#data .data .dataInfo .o3 { top: 80px; left: 575px; }
+#data .data .dataInfo .selected .o { display: none; }
+#data .data .dataList { position: absolute; width: 950px; height: 500px; left: 65px; top: 970px; }
+#data .data .dataList img { position: absolute; width: 100%; left: 0; top: 65px; }
+#data .data .dataList p { float: left; width: 50%; text-align: left; font-size: 50px; color: #fff; margin-left: 480px; line-height: 190px; font-weight: 400; }
+#data .data .dataList p strong { font-size: 20px; font-weight: 200; }
 
 
 

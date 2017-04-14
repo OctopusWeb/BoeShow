@@ -19,9 +19,19 @@ $FontColor:#bbcfea;
     background:-moz-linear-gradient(top, nth($DeepColor,1), nth($DeepColor,2));
     background:linear-gradient(to bottom, nth($DeepColor,1), nth($DeepColor,2));
 }
+@font-face
+{
+font-family: numberFont;
+src: url('../font/DIN-Medium.otf')
+}
+@font-face
+{
+font-family: stringFont;
+src: url('../font/PingFangMedium.ttf')
+}
 
 html,body{
-    font-family: "微软雅黑";
+    font-family: numberFont;
     overflow: hidden;
     #wrap{
         @include top-gradient;
@@ -34,6 +44,14 @@ html,body{
         #content{
             width: $NomalWidth;
             height: $NomalHeight;
+            .page{
+                position: absolute;
+                top: 150px;
+                height: 1680px;
+                width: $NomalWidth;
+                left: -1080px;
+                opacity: 0;
+            }
         }
     }
 }
@@ -42,3 +60,6 @@ html,body{
 @import "top";
 @import "menu";
 @import "home";
+@import "location";
+@import "safa";
+@import "data";

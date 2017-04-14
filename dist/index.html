@@ -11,8 +11,12 @@
 		<div id="wrap">
 			<div id="top">
 				<div id="escBtn">
-					<img src="assets/img/top/esc.png" class="selected"/>
 					<img src="assets/img/top/esc-hover.png" />
+					<img src="assets/img/top/esc.png" class="selected"/>
+				</div>
+				<div id="homeBtn">
+					<img src="assets/img/top/home2.png" />
+					<img src="assets/img/top/home1.png" class="selected"/>
 				</div>
 				<div id="timeInfo">
 					<div id="dayTime">2017-03-25</div>
@@ -44,7 +48,7 @@
 				<img src="assets/img/top/title.png" class="bk" ondragstart="return false;"/>
 			</div>
 			<div id="content">
-				<div id="home">
+				<div id="home" class="page">
 					<img src="assets/img/top/bk.png" id="bk"/>
 					<div id="carName">
 						<img src="assets/img/top/carName.png"/>
@@ -75,7 +79,7 @@
 						</div>
 					</div>
 					<div id="carPic">
-						<canvas id="carCanvas" width="1200" height="600"></canvas>
+						<canvas id="carCanvas" width="1080" height="650"></canvas>
 					</div>
 					<div id="carBk"></div>
 					<div id="carPower">
@@ -93,20 +97,123 @@
 						</div>
 					</div>
 				</div>
-				<div id="music"></div>
-				<div id="location"></div>
-				<div id="data"></div>
-				<div id="form"></div>
-				<div id="call"></div>
+				<div id="music" class="page"></div>
+				<div id="location" class="page">
+					<video width="1080" height="1920" id="locationVideo"  autoplay="autoplay" loop="loop">
+						<source src="assets/video/location.mp4" type="video/mp4"></source>
+						当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+					</video>
+				</div>
+				<div id="data" class="page">
+					<div id="data1" class="data">
+						<img src="assets/img/data/data1Bk.png" class="data1Bk"/>
+						<ul>
+							<li><p>6:35<strong>PM</strong></p></li>
+							<li><p>1200<strong>KM</strong></p></li>
+							<li><p>12:54:01<strong>H</strong></p></li>
+							<li><p>6:35<strong>PM</strong></p></li>
+							<li><p>12<strong>L/KM</strong></p></li>
+							<li><p>120<strong>TIMES</strong></p></li>
+							<li><p>4<strong>TIMES</strong></p></li>
+						</ul>
+						<img src="assets/img/data/round1.png" class="round1"/>
+						<img src="assets/img/data/round2.png" class="round2"/>
+						<div class="dataInfo">
+							<div class="o1">
+								<p>TODAY</p>
+								<img src="assets/img/data/o2.png"/>
+								<img src="assets/img/data/o1.png" class="o"/>
+							</div>
+							<div class="o2 selected">
+								<p>THIS WEEK</p>
+								<img src="assets/img/data/o4.png"/>
+								<img src="assets/img/data/o3.png"  class="o"/>
+							</div>
+							<div class="o3">
+								<p>THIS MONTH</p>
+								<img src="assets/img/data/o2.png"/>
+								<img src="assets/img/data/o1.png"  class="o"/>
+							</div>
+						</div>
+						<div class="dataList">
+							<img src="assets/img/data/dataList.png"/>
+							<p>180<strong>KM</strong></p>
+							<p>5:30<strong>H</strong></p>
+							<p>60<strong>KM/H</strong></p>
+						</div>
+					</div>
+					<div id="data2" class="data">
+						<img src="assets/img/data/data2Bk.png" class="data1Bk"/>
+						<ul>
+							<li><p>12<strong>TIMES</strong></p></li>
+							<li><p>36<strong>TIMES</strong></p></li>
+							<li><p>6<strong>TIMES</strong></p></li>
+							<li><p>11<strong>TIMES</strong></p></li>
+							<li><p>12<strong>TIMES</strong></p></li>
+							<li><p>36<strong>TIMES</strong></p></li>
+							<li><p>6<strong>TIMES</strong></p></li>
+							<li><p>11<strong>TIMES</strong></p></li>
+						</ul>
+						<img src="assets/img/data/round1.png" class="round1"/>
+						<img src="assets/img/data/round2.png" class="round2"/>
+						<div class="dataInfo">
+							<div class="o1">
+								<p>TODAY</p>
+								<img src="assets/img/data/o2.png"/>
+								<img src="assets/img/data/o1.png" class="o"/>
+							</div>
+							<div class="o2 selected">
+								<p>THIS WEEK</p>
+								<img src="assets/img/data/o4.png"/>
+								<img src="assets/img/data/o3.png"  class="o"/>
+							</div>
+							<div class="o3">
+								<p>THIS MONTH</p>
+								<img src="assets/img/data/o2.png"/>
+								<img src="assets/img/data/o1.png"  class="o"/>
+							</div>
+						</div>
+						<div class="dataList">
+							<img src="assets/img/data/data2List.png"/>
+							<p style="color: #03723f;">180<strong>KM</strong></p>
+							<p style="color: #668f27;">180<strong>KM</strong></p> 
+							<p style="margin-top: 35px;color: #b8af12;">180<strong>KM</strong></p>
+							<p style="margin-top: 35px;color: #aa7215;">180<strong>KM</strong></p>
+							<p style="margin-top: 40px;color: #a2050e;">180<strong>KM</strong></p>
+							<p style="margin-top: 40px;color: #9b5160;">180<strong>KM</strong></p>
+							<p style="margin-top: 45px;color: #038aba;">5:30<strong>H</strong></p>
+							<p style="margin-top: 45px;color: #188a95;">60<strong>KM/H</strong></p>
+						</div>
+					</div>
+					<div class="tipBtn" id="dataTip">
+						<img src="assets/img/data/1.png" class="tipBk"/>
+						<img src="assets/img/data/btn2.png" class="tipTitle selected"/>
+						<img src="assets/img/data/btn1.png" class="tipTitle"/>
+					</div>
+				</div>
+				<div id="form" class="page">
+					<video width="1080" height="1920" id="safa2"  autoplay="autoplay" loop="loop">
+						<source src="assets/video/safa2.mp4" type="video/mp4"></source>
+					</video>
+					<video width="1080" height="1920" id="safa1"  autoplay="autoplay" loop="loop">
+						<source src="assets/video/safa1.mp4" type="video/mp4"></source>
+					</video>
+					<div class="tipBtn" id="safaTip">
+						<img src="assets/img/safa/1.png" class="tipBk"/>
+						<img src="assets/img/safa/btn2.png" class="tipTitle selected"/>
+						<img src="assets/img/safa/btn1.png" class="tipTitle"/>
+					</div>
+				</div>
+				<div id="call" class="page"></div>
 			</div>
 			<div id="menu">
 				<img src="assets/img/top/menu.png"/>
 				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li name="music"></li>
+					<li name="location"></li>
+					<li name="data"></li>
+					<li name="form"></li>
+					<li name="call"></li>
 				</ul>
 			</div>
 		</div>
@@ -118,4 +225,7 @@
 	
 	<script  type="text/javascript" src="assets/js/initController.js"></script>
 	<script  type="text/javascript" src="assets/js/homeController.js"></script>
+	<script  type="text/javascript" src="assets/js/safaController.js"></script>
+	<script  type="text/javascript" src="assets/js/dataController.js"></script> 
+	
 </html>

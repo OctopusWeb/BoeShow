@@ -32,3 +32,7 @@ $at.NumberAnimate = function(start,stop,onComplete){
 		onComplete(num);
 	},time)
 }
+$at.PageAnimate = function(showDom){
+	$(".page").not(showDom).animate({"left":"-1080px","opacity":"0"})
+	showDom.animate({"left":"0","opacity":"1"});
+}
