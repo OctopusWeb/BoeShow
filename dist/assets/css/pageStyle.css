@@ -45,8 +45,8 @@ html #wrap #content .page, body #wrap #content .page { position: absolute; top: 
 #home #carPower #powerBar .powerBar1 { margin-left: 28px; }
 #home #carPower #powerBar .powerBar2 { background: url(../img/top/powerbK3.png); width: 0px; }
 #home #carPower #powerBar .powerBar { height: 42px; float: left; }
-#home #carPic { position: absolute; width: 1080px; height: 650px; top: 750px; z-index: 100; }
-#home #carBkPic { position: absolute; width: 1080px; height: 300px; top: 900px; left: -10px; }
+#home #carPic { position: absolute; width: 1080px; height: 650px; top: 550px; z-index: 100; left: -50px; }
+#home #carBkPic { position: absolute; width: 1080px; height: 300px; top: 900px; left: 0px; }
 
 #locationVideo { position: absolute; top: -150px; left: 0; }
 
@@ -83,6 +83,44 @@ html #wrap #content .page, body #wrap #content .page { position: absolute; top: 
 #data .data .dataList img { position: absolute; width: 100%; left: 0; top: 65px; }
 #data .data .dataList p { float: left; width: 50%; text-align: left; font-size: 50px; color: #fff; margin-left: 480px; line-height: 190px; font-weight: 400; }
 #data .data .dataList p strong { font-size: 20px; font-weight: 200; }
+
+#music #musicTip { width: 612px; height: 80px; margin-left: -306px; }
+#music .music { position: absolute; top: 200px; width: 1080px; height: 1400px; overflow: hidden; }
+#music .music1 h1 { font-size: 36px; width: 100%; text-align: center; color: #fff; font-weight: 400; }
+#music .music1 h2 { font-size: 26px; width: 100%; text-align: center; color: #7a8aa4; font-weight: 400; }
+#music .music1 #music1Box { position: absolute; width: 2160px; height: 570px; }
+#music .music1 #music1Box .box { width: 1080px; float: left; height: 570px; margin-top: 30px; position: relative; }
+#music .music1 #music1Box .box .musicImg { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); /* IE 9 */ -webkit-transform: translate(-50%, -50%); /* Safari and Chrome */ -o-transform: translate(-50%, -50%); /* Opera */ -moz-transform: translate(-50%, -50%); /* Firefox */ }
+#music .music1 #musicPro { width: 90px; position: absolute; top: 720px; left: 500px; }
+#music .music1 #musicPro .roundBk { float: left; width: 16px; height: 16px; background: #17357e; border-radius: 50%; margin-left: 25px; }
+#music .music1 #musicPro .selected { background: #2668fc; }
+#music .music1 #musicInfo { width: 850px; position: absolute; left: 115px; top: 760px; height: 28px; }
+#music .music1 #musicInfo p { position: absolute; width: 100px; font-size: 16px; color: #fff; text-align: left; line-height: 28px; left: 0; }
+#music .music1 #musicInfo span { position: absolute; right: 0; width: 100px; font-size: 16px; color: #fff; text-align: right; line-height: 28px; }
+#music .music1 #musicInfo .proBar { width: 640px; height: 28px; position: absolute; left: 100px; top: 0; }
+#music .music1 #musicInfo .proBar .barBk { height: 4px; position: absolute; background: #0b1634; left: 0; width: 640px; top: 12px; border-radius: 2px; }
+#music .music1 #musicInfo .proBar .bar { height: 10px; position: absolute; top: 9px; left: 0; width: 50%; border-radius: 5px; background: -webkit-linear-gradient(top, #c5d5ec, #7d9fc5); background: -o-linear-gradient(top, #c5d5ec, #7d9fc5); background: -moz-linear-gradient(top, #c5d5ec, #7d9fc5); background: linear-gradient(to bottom, #c5d5ec, #7d9fc5); }
+#music .music1 #musicInfo .proBar .bar img { position: absolute; right: -14px; top: -8px; }
+#music .music1 #musicController { position: absolute; top: 820px; width: 850px; left: 115px; height: 150px; }
+#music .music1 #musicController div { position: absolute; }
+#music .music1 #musicController .random { width: 54px; height: 40px; top: 55px; }
+#music .music1 #musicController .pre { width: 137px; height: 137px; top: 6px; left: 200px; }
+#music .music1 #musicController .play, #music .music1 #musicController .pause { width: 165px; height: 165px; top: 0; left: 360px; }
+#music .music1 #musicController .next { width: 137px; height: 137px; top: 6px; left: 556px; }
+#music .music1 #musicController .xunhuan { width: 54px; height: 40px; top: 55px; left: 800px; }
+#music .music1 #musicController img { position: absolute; }
+#music .music1 #musicController .selected:active { display: none; }
+#music #musicList { position: absolute; top: 1040px; width: 850px; left: 115px; z-index: 10; }
+#music #musicList h1 { line-height: 50px; float: left; width: 100%; text-align: center; margin-bottom: 20px; }
+#music #musicList li { width: 100%; float: left; height: 50px; position: relative; background: rgba(0, 0, 0, 0.3); margin-top: 5px; }
+#music #musicList li p { float: left; line-height: 50px; color: #fff; width: 34px; text-align: center; }
+#music #musicList li img { width: 36px; height: 36px; float: left; border-radius: 50%; margin-top: 7px; margin-left: 10px; }
+#music #musicList li span { line-height: 50px; color: #fff; font-size: 20px; margin-left: 20px; font-weight: 300; }
+#music #musicList li span strong { font-size: 16px; color: #576280; }
+#music #musicList li .musicRight { position: absolute; width: 5px; height: 21px; border-radius: 0; margin: 0; right: 15px; top: 15px; }
+#music #musicList .selected { background: rgba(0, 0, 0, 0.5); }
+#music .round { position: absolute; top: 1190px; width: 1080px; left: 0; }
+#music .music2 { left: 1080px; }
 
 
 

@@ -114,14 +114,15 @@
         position: absolute;
         width: 1080px;
         height: 650px;
-        top: 750px;
+        top: 550px;
         z-index: 100;
+        left:-50px
     }
     #carBkPic{
         position: absolute;
         width: 1080px;
         height: 300px;
         top: 900px;
-        left: -10px;
+        left: 0px;
     }
 }

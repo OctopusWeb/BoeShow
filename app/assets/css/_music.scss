@@ -1,0 +1,239 @@
+#music{
+    #musicTip{
+        width: 612px;
+        height: 80px;
+        margin-left: -306px;
+    }
+    .music{
+        position: absolute;
+        top: 200px;
+        width: 1080px;
+        height: 1400px;
+        overflow: hidden;
+    }
+    .music1{
+        h1{
+            font-size: 36px;
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-weight: 400;
+        }
+        h2{
+            font-size: 26px;
+            width: 100%;
+            text-align: center;
+            color: #7a8aa4;
+            font-weight: 400;
+        }
+        #music1Box{
+            position: absolute;
+            width: 2160px;
+            height: 570px;
+            .box{
+                width: 1080px;
+                float: left;
+                height: 570px;
+                margin-top: 30px;
+                position: relative;
+                .musicImg{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    -ms-transform: translate(-50%,-50%);       /* IE 9 */
+                    -webkit-transform: translate(-50%,-50%);   /* Safari and Chrome */
+                    -o-transform: translate(-50%,-50%);        /* Opera */
+                    -moz-transform: translate(-50%,-50%);      /* Firefox */
+                }
+            } 
+        }
+        #musicPro{
+            width: 90px;
+            position: absolute;
+            top: 720px;
+            left: 500px;
+            .roundBk{
+                float: left;
+                width: 16px;
+                height: 16px;
+                background: #17357e;
+                border-radius: 50%;
+                margin-left: 25px;
+            }
+            .selected{
+                background: #2668fc;
+            }
+        }
+        #musicInfo{
+            width: 850px;
+            position: absolute;
+            left: 115px;
+            top: 760px;
+            height: 28px;
+            p{
+                position: absolute;
+                width: 100px;
+                font-size: 16px;
+                color: #fff;
+                text-align: left;
+                line-height: 28px;
+                left: 0;
+            }
+            span{
+                position: absolute;
+                right: 0;
+                width: 100px;
+                font-size: 16px;
+                color: #fff;
+                text-align: right;
+                line-height: 28px;
+            }
+            .proBar{
+                width: 640px;
+                height: 28px;
+                position: absolute;
+                left: 100px;
+                top: 0;
+                .barBk{
+                    height: 4px;
+                    position: absolute;
+                    background: #0b1634;
+                    left: 0;
+                    width: 640px;
+                    top: 12px;
+                    border-radius: 2px;
+                }
+                .bar{
+                    height: 10px;
+                    position: absolute;
+                    top: 9px;
+                    left: 0;
+                    width: 50%;
+                    border-radius: 5px;
+                    @include deep-gradient;
+                    img{
+                        position: absolute;
+                        right: -14px;
+                        top: -8px;
+                    }
+                }
+            }
+        }
+        #musicController{
+            position: absolute;
+            top: 820px;
+            width: 850px;
+            left: 115px;
+            height: 150px;
+            div{
+                position: absolute;
+            }
+            .random{
+                width: 54px;
+                height: 40px;
+                top: 55px;
+                
+            }
+            .pre{
+                width: 137px;
+                height: 137px;
+                top: 6px;
+                left: 200px;
+            }
+            .play,.pause{
+                width: 165px;
+                height: 165px;
+                top: 0;
+                left: 360px;
+            }
+            .next{
+                width: 137px;
+                height: 137px;
+                top: 6px;
+                left: 556px;
+            }
+            .xunhuan{
+                width: 54px;
+                height: 40px;
+                top: 55px;
+                left: 800px;
+            }
+            img{
+                position: absolute;
+            } 
+            .selected:active{
+                display: none;
+            }
+        }
+    }
+    #musicList{
+        position: absolute;
+        top: 1040px;
+        width: 850px;
+        left: 115px;
+        z-index: 10;
+        h1{
+            line-height: 50px;
+            float: left;
+            width: 100%;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        li{
+            width: 100%;
+            float: left;
+            height: 50px;
+            position: relative;
+            background: rgba(0,0,0,0.3);
+            margin-top: 5px;
+            p{
+                float: left;
+                line-height: 50px;
+                color: #fff;
+                width: 34px;
+                text-align: center;
+            }
+            img{
+                width: 36px;
+                height: 36px;
+                float: left;
+                border-radius: 50%;
+                margin-top: 7px;
+                margin-left: 10px;
+            }
+            span{
+                line-height: 50px;
+                color: #fff;
+                font-size: 20px;
+                margin-left: 20px;
+                font-weight: 300;
+                strong{
+                    font-size: 16px;
+                    color: #576280;
+                }
+            }
+            .musicRight{
+                position: absolute;
+                width: 5px;
+                height: 21px;
+                border-radius: 0;
+                margin: 0;
+                right: 15px;
+                top: 15px;
+            }
+        }
+        .selected{
+            background: rgba(0,0,0,0.5);
+        }
+    }
+    .round{
+        position: absolute;
+        top: 1190px;
+        width: 1080px;
+        left: 0;
+    }
+    .music2{
+        left: 1080px;
+    }
+}

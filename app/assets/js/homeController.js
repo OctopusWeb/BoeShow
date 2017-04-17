@@ -5,7 +5,7 @@ var HomeController = (function(){
 	var carPower = $("#carPower");
 	function carMove(){
 		var carNum=0;
-		var carSoure = $at.PictureSoure("assets/img/car/s__00",0,72);
+		var carSoure = $at.PictureSoure("assets/img/car/s_00",0,72);
 		var hammer = new Hammer(document.getElementById("carPic"));
 		setTimeout(function(){
 			$at.CanvasMove(carSoure[carNum],1080,600,"carCanvas");
