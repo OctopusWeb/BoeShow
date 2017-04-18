@@ -13,7 +13,7 @@ $at.CanvasMove = function(image,width,height,id){
 $at.PictureSoure = function(pubUrl,start,stop){
 	var arr = [];
 	var len = stop-start;
-	for (var i=0;i<len;i++) {
+	for (var i=start;i<stop;i++) {
 		var image=new Image();
 		image.src = pubUrl+i+".png";
 		arr.push(image);

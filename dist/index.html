@@ -104,14 +104,18 @@
 				</div>
 				<div id="music" class="page">
 					<div class="music1 music">
-						<h1>SONG OF THE GREAT WIND</h1>
-						<h2>Anstasia</h2>
+						<h1 id="musicName">SONG OF THE GREAT WIND</h1>
+						<h2 id="musicUser">Anstasia</h2>
 						<div id="music1Box">
+							<div id="event"></div>
 							<div class="box">
 								<img src="assets/img/music/musicBk.png" class="musicBottom musicImg"/>
-								<img src="assets/img/music/musicRound1.png" class="musicRound musicImg"/>
+								<img src="assets/img/music/musicRound1.png" class="musicRound musicImg musicPause"/>
 								<img src="assets/img/music/head3.png" class="head musicImg"/>
 								<img src="assets/img/music/musicBk2.png" class="musicTop musicImg"/>
+							</div>
+							<div class="box">
+								<canvas id="musicBk" width="1080" height="570"></canvas> 
 							</div>
 						</div>
 						<div id="musicPro">
@@ -119,7 +123,7 @@
 							<div class="roundBk"></div>
 						</div>
 						<div id="musicInfo">
-							<p>00:03:00</p>
+							<p>00:00:00</p>
 							<div class="proBar">
 								<div class="barBk"></div>
 								<div class="bar">
@@ -191,7 +195,30 @@
 						</div>
 					</div>
 					<div class="music2 music">
-						
+						<div id="fmBox">
+							<h1>AAAAAAAAAA</h1>
+<!--							<img src="assets/img/music/"/>-->
+						</div>
+						<div id="fmGroup">
+							<img src="assets/img/music/fmNumber.png" class="fmNumber"/>
+							<div class="fmBtn">
+								<img src="assets/img/music/fmBtn.png"/>
+							</div>
+						</div>
+						<div id="fmControler">
+							<div class="pre">
+								<img src="assets/img/music/pre2.png"/>
+								<img src="assets/img/music/pre1.png" class="selected"/>
+							</div>
+							<div class="stop">
+								<img src="assets/img/music/stop2.png"/>
+								<img src="assets/img/music/stop1.png" class="selected"/>
+							</div>
+							<div class="next">
+								<img src="assets/img/music/next2.png"/>
+								<img src="assets/img/music/next1.png" class="selected"/>
+							</div>
+						</div>
 					</div>
 					<img src="assets/img/music/round.png" class="round"/>
 					<div class="tipBtn" id="musicTip">
@@ -327,6 +354,7 @@
 	
 	<script  type="text/javascript" src="assets/js/initController.js"></script>
 	<script  type="text/javascript" src="assets/js/homeController.js"></script>
+	<script  type="text/javascript" src="assets/js/musicController.js"></script>
 	<script  type="text/javascript" src="assets/js/safaController.js"></script>
 	<script  type="text/javascript" src="assets/js/dataController.js"></script> 
 	

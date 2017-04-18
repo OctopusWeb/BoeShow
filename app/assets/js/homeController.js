@@ -19,10 +19,10 @@ var HomeController = (function(){
 	}
 	function carBkMove(){
 		var carBkNum=0;
-		var carBkSoure = $at.PictureSoure("assets/img/carBk/s1_00",0,100);
+		var carBkSoure = $at.PictureSoure("assets/img/carBk/s_00",0,50);
 		setInterval(function(){
 			carBkNum++
-			carBkNum == 100?carBkNum=0:carBkNum=carBkNum;
+			carBkNum == 50?carBkNum=0:carBkNum=carBkNum;
 			$at.CanvasMove(carBkSoure[carBkNum],1080,300,"carBkCanvas");
 		},100)
 	}
