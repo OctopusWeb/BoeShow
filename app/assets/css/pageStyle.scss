@@ -60,6 +60,26 @@ html,body{
             }
         }
     }
+    #setScreen{
+        position: fixed;
+        width: 1080px;
+        height: 1920px;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        background: #000;
+        display: none;
+        img{
+            position: absolute;left: 0;
+            top: 0;
+            height: 1920px;
+            width: 1080px;
+            display: none;
+        }
+        .selected{
+            display: block;
+        }
+    }
 }
 
 

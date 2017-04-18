@@ -4,6 +4,9 @@ html, body { font-family: numberFont; overflow: hidden; }
 html #wrap, body #wrap { background: -webkit-linear-gradient(top, #081636, #11234f); background: -o-linear-gradient(top, #081636, #11234f); background: -moz-linear-gradient(top, #081636, #11234f); background: linear-gradient(to bottom, #081636, #11234f); position: absolute; display: block; top: 0; left: 0; width: 1080px; height: 1920px; }
 html #wrap #content, body #wrap #content { width: 1080px; height: 1920px; }
 html #wrap #content .page, body #wrap #content .page { position: absolute; top: 150px; height: 1680px; width: 1080px; left: -1080px; opacity: 0; }
+html #setScreen, body #setScreen { position: fixed; width: 1080px; height: 1920px; top: 0; left: 0; z-index: 100; background: #000; display: none; }
+html #setScreen img, body #setScreen img { position: absolute; left: 0; top: 0; height: 1920px; width: 1080px; display: none; }
+html #setScreen .selected, body #setScreen .selected { display: block; }
 
 #top { position: absolute; width: 1080px; z-index: 100; }
 #top #escBtn { display: none; width: 47px; height: 47px; position: absolute; left: 37px; top: 43px; }

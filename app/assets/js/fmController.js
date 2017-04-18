@@ -30,15 +30,13 @@ var FmController = (function(){
 				fmIndex = parseInt(index)
 				chooseFm(fmIndex);
 			})
+			chooseFm(0);
 		}
 		fm.play = function(){
 			fmBox.find(".musicRound2").removeClass("musicPause");
 		}
 		fm.stop = function(){
 			fmBox.find(".musicRound2").addClass("musicPause")
-		}
-		fm.choose = function(){
-			
 		}
 		fm.domEvent = function(){
 			var fmBtn = $("#fmControler");

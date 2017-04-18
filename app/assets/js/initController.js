@@ -1,5 +1,8 @@
 $(function(){
 	var menu = [$("#home"),$("#music"),$("#location"),$("#data"),$("#form"),$("#call")];
+	var week = ["SUN","MON","TUE","WED","THU","FRI","SAT"];
+	topInit();
+	
 	
 	var homeController = new HomeController;
 	homeController.carMove();
@@ -39,4 +42,34 @@ $(function(){
 			dataController.page1Show();
 		}
 	})
+	function topInit(){
+		var screenInter;
+		var timeInfo = $("#timeInfo");
+		var escBtn = $("#escBtn");
+		var setScreen = $("#setScreen");
+		var date = new Date();
+		var m = date.getMonth()+1;
+		m<=9?m="0"+m:m=m;
+		var d = date.getDate();
+		d<=9?d="0"+d:d=d;
+		var w = date.getDay();
+		var today = "2017-"+m+"-"+d;
+		timeInfo.find("#dayTime").html(today);
+		timeInfo.find("#week").html(week[w]);
+		escBtn.on("click",function(){
+			setScreen.fadeIn();
+			setScreen.find("img").eq(1).fadeIn();
+			screenInter = setInterval(screenFun,5000);
+		})
+		setScreen.on("click",function(){
+			setScreen.fadeOut();
+			setScreen.find("img").fadeOut();
+			clearInterval(screenInter);
+		})
+		function screenFun(){
+			setScreen.find("img").fadeOut();
+			var index = parseInt(Math.random()*2);
+			setScreen.find("img").eq(index).fadeIn();
+		}
+	}
 })
