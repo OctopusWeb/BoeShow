@@ -19,6 +19,12 @@ $FontColor:#bbcfea;
     background:-moz-linear-gradient(top, nth($DeepColor,1), nth($DeepColor,2));
     background:linear-gradient(to bottom, nth($DeepColor,1), nth($DeepColor,2));
 }
+@mixin rgba-gradient{
+    background:-webkit-linear-gradient(left, rgba(13,80,238,0), rgba(13,80,238,0.3));
+    background:-o-linear-gradient(left, rgba(13,80,238,0), rgba(13,80,238,0.3));
+    background:-moz-linear-gradient(left, rgba(13,80,238,0), rgba(13,80,238,0.3));
+    background:linear-gradient(to right, rgba(13,80,238,0), rgba(13,80,238,0.3));
+}
 @font-face
 {
 font-family: numberFont;

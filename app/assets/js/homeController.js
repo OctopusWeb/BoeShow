@@ -9,7 +9,7 @@ var HomeController = (function(){
 		var hammer = new Hammer(document.getElementById("carPic"));
 		setTimeout(function(){
 			$at.CanvasMove(carSoure[carNum],1080,600,"carCanvas");
-		},100);
+		},500);
 		hammer.on("pan", function (e) {
 			carNum = parseInt(e.deltaX/3);
 			carNum>=72?carNum=carNum%72:carNum=carNum;

@@ -118,7 +118,7 @@ html #wrap #content .page, body #wrap #content .page { position: absolute; top: 
 #music #musicList { position: absolute; top: 1040px; width: 850px; left: 115px; z-index: 10; }
 #music #musicList h1 { line-height: 50px; float: left; width: 100%; text-align: center; margin-bottom: 20px; }
 #music #musicList ul { width: 100%; height: 280px; overflow: auto; }
-#music #musicList li { width: 100%; float: left; height: 50px; position: relative; background: rgba(0, 0, 0, 0.3); margin-top: 5px; }
+#music #musicList li { width: 100%; float: left; height: 50px; position: relative; background: rgba(0, 0, 0, 0.3); margin-top: 5px; list-style: none; }
 #music #musicList li p { float: left; line-height: 50px; color: #fff; width: 34px; text-align: center; }
 #music #musicList li img { width: 36px; height: 36px; float: left; border-radius: 50%; margin-top: 7px; margin-left: 10px; }
 #music #musicList li span { line-height: 50px; color: #fff; font-size: 20px; margin-left: 20px; font-weight: 300; }
@@ -127,6 +127,32 @@ html #wrap #content .page, body #wrap #content .page { position: absolute; top: 
 #music #musicList .selected { background: #0e2c7a; }
 #music .round { position: absolute; top: 1190px; width: 1080px; left: 0; }
 #music .music2 { display: none; left: 0px; }
+#music .music2 h1 { font-size: 36px; width: 100%; text-align: center; color: #fff; font-weight: 400; }
+#music .music2 #fmBox { width: 1080px; height: 1060px; position: absolute; top: -200px; }
+#music .music2 #fmBox h2 { width: 1080px; color: #fff; line-height: 1050px; font-size: 100px; font-weight: 400; position: absolute; text-align: center; left: -10px; z-index: 10; }
+#music .music2 #fmBox .fmbk { left: 12px; position: absolute; }
+#music .music2 #fmBox .musicRound2 { position: absolute; top: 50%; left: 50%; animation: myfirst 5s linear 0s infinite normal; -moz-animation: myfirst 5s linear 0s infinite normal; -webkit-animation: myfirst 5s linear 0s infinite normal; -o-animation: myfirst 5s linear 0s infinite normal; }
+#music .music2 #fmBox .musicPause { -webkit-animation-play-state: paused; -moz-animation-play-state: paused; }
+#music .music2 #fmGroup { position: absolute; top: 650px; width: 835px; height: 85px; left: 123px; z-index: 10; }
+#music .music2 #fmGroup .fmBtn { height: 175px; position: absolute; left: 0; top: -40px; width: 50%; background: -webkit-linear-gradient(left, rgba(13, 80, 238, 0), rgba(13, 80, 238, 0.3)); background: -o-linear-gradient(left, rgba(13, 80, 238, 0), rgba(13, 80, 238, 0.3)); background: -moz-linear-gradient(left, rgba(13, 80, 238, 0), rgba(13, 80, 238, 0.3)); background: linear-gradient(to right, rgba(13, 80, 238, 0), rgba(13, 80, 238, 0.3)); }
+#music .music2 #fmGroup .fmBtn img { position: absolute; top: -25px; right: -25px; }
+#music .music2 #fmControler { position: absolute; top: 820px; width: 850px; left: 115px; height: 150px; }
+#music .music2 #fmControler div { position: absolute; }
+#music .music2 #fmControler img { position: absolute; }
+#music .music2 #fmControler .pre { width: 137px; height: 137px; top: 6px; left: 200px; }
+#music .music2 #fmControler .stop { width: 165px; height: 165px; top: 0; left: 360px; display: none; }
+#music .music2 #fmControler .play { width: 165px; height: 165px; top: 0; left: 360px; }
+#music .music2 #fmControler .next { width: 137px; height: 137px; top: 6px; left: 556px; }
+#music .music2 #fmControler .selected:active { display: none; }
+#music .music2 #fmList { position: absolute; top: 1040px; width: 850px; left: 115px; z-index: 10; }
+#music .music2 #fmList h1 { line-height: 50px; float: left; width: 100%; text-align: center; margin-bottom: 20px; }
+#music .music2 #fmList ul { width: 100%; height: 280px; overflow: auto; }
+#music .music2 #fmList li { width: 100%; float: left; height: 50px; position: relative; background: rgba(0, 0, 0, 0.3); margin-top: 5px; list-style: none; }
+#music .music2 #fmList li p { float: left; line-height: 50px; color: #fff; width: 34px; text-align: center; }
+#music .music2 #fmList li span { line-height: 50px; color: #fff; font-size: 20px; margin-left: 20px; font-weight: 300; }
+#music .music2 #fmList li h3 { float: right; line-height: 50px; color: #fff; font-size: 20px; margin-right: 20px; font-weight: 300; }
+#music .music2 #fmList li .musicRight { position: absolute; width: 5px; height: 21px; border-radius: 0; margin: 0; right: 15px; top: 15px; }
+#music .music2 #fmList .selected { background: #0e2c7a; }
 
 @keyframes myfirst { from { transform: translate(-50%, -50%) rotate(360deg); -ms-transform: translate(-50%, -50%) rotate(360deg); -webkit-transform: translate(-50%, -50%) rotate(360deg); -o-transform: translate(-50%, -50%) rotate(360deg); -moz-transform: translate(-50%, -50%) rotate(360deg); }
   to { transform: translate(-50%, -50%) rotate(0deg); -ms-transform: translate(-50%, -50%) rotate(0deg); -webkit-transform: translate(-50%, -50%) rotate(0deg); -o-transform: translate(-50%, -50%) rotate(0deg); -moz-transform: translate(-50%, -50%) rotate(0deg); } }

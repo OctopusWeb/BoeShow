@@ -70,16 +70,36 @@ var MusicController = (function(){
 		music.pre = function(){
 			selectIndex--;
 			if(selectIndex<0){
-				selectIndex=4
+				selectIndex=musicInfo.length-1;
 			}
 			changeMusic(selectIndex);
 		}
 		music.next = function(){
 			selectIndex++;
-			if(selectIndex>4){
+			if(selectIndex>musicInfo.length-1){
 				selectIndex=0
 			}
 			changeMusic(selectIndex);
+		}
+		music.domEvent = function(){
+			var musicBtn = $("#musicController");
+			musicBtn.find(".play").on("click",function(){
+				$(this).hide();
+				musicBtn.find(".pause").show()
+				music.play();
+			})
+			musicBtn.find(".pause").on("click",function(){
+				$(this).hide();
+				$(".musicRound").removeClass("musicRoundAnimate").addClass("musicRoundAnimate")
+				musicBtn.find(".play").show()
+				music.pause();
+			})
+			musicBtn.find(".pre").on("click",function(){
+				music.pre();
+			})
+			musicBtn.find(".next").on("click",function(){
+				music.next();
+			})
 		}
 		function changeMusic(index){
 			num=0;
