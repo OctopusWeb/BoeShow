@@ -6,16 +6,16 @@ var FmController = (function(){
 		var fmBox = $("#fmBox");
 		var fmIndex=0;
 		var fmList = [
-			["AAAAAAAAA",89.8,"5.5%"],
+			["AAAAAAAAA",89.8,"5.3%"],
 			["BBBBBBBBB",92.2,"26%"],
-			["CCCCCCCCC",92.4,"28%"],
-			["DDDDDDDDD",92.6,"31%"],
-			["EEEEEEEEE",93.8,"40%"],
-			["FFFFFFFFF",94.6,"47%"],
-			["HHHHHHHHH",96.4,"62%"],
-			["JJJJJJJJJ",98.2,"78%"],
+			["CCCCCCCCC",92.4,"27.7%"],
+			["DDDDDDDDD",92.6,"31.2%"],
+			["EEEEEEEEE",93.8,"39.8%"],
+			["FFFFFFFFF",94.6,"46.7%"],
+			["HHHHHHHHH",96.4,"62.1%"],
+			["JJJJJJJJJ",98.2,"77.7%"],
 			["QQQQQQQQQ",99.4,"88%"],
-			["EEEEEEEEE",99.8,"91.5%"]
+			["EEEEEEEEE",99.8,"91.6%"]
 		]
 		fm.initList = function(){
 			var str=""

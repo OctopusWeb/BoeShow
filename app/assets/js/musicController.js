@@ -134,7 +134,7 @@ var MusicController = (function(){
 			musicBox2 = setInterval(function(){
 				musicBkNum++
 				musicBkNum == 49?musicBkNum=0:musicBkNum=musicBkNum;
-				$at.CanvasMove(musicBkSoure[musicBkNum],1080,570,"musicBk",1080,570);
+				$at.CanvasMove(musicBkSoure[musicBkNum],1080,570,"musicBk",870,400);
 			},50)
 		}
 		function boxEvent(){
