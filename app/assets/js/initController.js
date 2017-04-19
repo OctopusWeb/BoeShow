@@ -25,6 +25,8 @@ $(function(){
 	
 	var callController = new CallController();
 	callController.tip();
+	callController.headMove();
+	callController.eventInt();
 	
 	
 	$("#homeBtn").on("click",function(){

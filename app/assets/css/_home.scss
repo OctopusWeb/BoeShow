@@ -1,5 +1,6 @@
 #home{
-   
+    width: $NomalWidth;
+    overflow: hidden;
     #bk{
         width: $NomalWidth;
         position: absolute;
@@ -114,15 +115,15 @@
         position: absolute;
         width: 1080px;
         height: 650px;
-        top: 550px;
+        top: 350px;
         z-index: 100;
-        left:-50px
+        left:-290px
     }
     #carBkPic{
         position: absolute;
         width: 1080px;
         height: 300px;
-        top: 900px;
+        top: 950px;
         left: 0px;
     }
 }

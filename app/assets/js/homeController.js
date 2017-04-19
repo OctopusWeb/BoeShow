@@ -8,13 +8,13 @@ var HomeController = (function(){
 		var carSoure = $at.PictureSoure("assets/img/car/s_00",0,72);
 		var hammer = new Hammer(document.getElementById("carPic"));
 		setTimeout(function(){
-			$at.CanvasMove(carSoure[carNum],1080,600,"carCanvas");
+			$at.CanvasMove(carSoure[carNum],1620,900,"carCanvas",1620,900);
 		},500);
 		hammer.on("pan", function (e) {
 			carNum = parseInt(e.deltaX/3);
 			carNum>=72?carNum=carNum%72:carNum=carNum;
 			carNum<0?carNum=71+carNum%72:carNum=carNum;
-			$at.CanvasMove(carSoure[carNum],1080,600,"carCanvas");
+			$at.CanvasMove(carSoure[carNum],1620,900,"carCanvas",1620,900);
 	  }); 
 	}
 	function carBkMove(){
@@ -23,7 +23,7 @@ var HomeController = (function(){
 		setInterval(function(){
 			carBkNum++
 			carBkNum == 50?carBkNum=0:carBkNum=carBkNum;
-			$at.CanvasMove(carBkSoure[carBkNum],1080,300,"carBkCanvas");
+			$at.CanvasMove(carBkSoure[carBkNum],1080,300,"carBkCanvas",1080,300);
 		},100)
 	}
 	function show(){

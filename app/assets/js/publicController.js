@@ -1,14 +1,11 @@
 var $at = {};
-$at.ButtonHover = function(dom){
-	
-}
-$at.CanvasMove = function(image,width,height,id){
+$at.CanvasMove = function(image,cWidth,cHeight,id,iWidth,iHeight){
 	var canvas = document.getElementById(id)
     if (canvas == null)
         return false;
     var context = canvas.getContext("2d");
-    context.clearRect(0,0,width,height);
-    context.drawImage(image,0,0);
+    context.clearRect(0,0,cWidth,cHeight);
+    context.drawImage(image,0,0,iWidth,iHeight);
 }
 $at.PictureSoure = function(pubUrl,start,stop){
 	var arr = [];
