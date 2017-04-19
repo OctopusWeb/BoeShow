@@ -23,6 +23,10 @@ $(function(){
 	var dataController = new DataController;
 	dataController.tip();
 	
+	var callController = new CallController();
+	callController.tip();
+	
+	
 	$("#homeBtn").on("click",function(){
 		$("#escBtn").show();
 		$("#homeBtn").hide();
@@ -68,7 +72,7 @@ $(function(){
 		})
 		function screenFun(){
 			setScreen.find("img").fadeOut();
-			var index = parseInt(Math.random()*2);
+			var index = parseInt(Math.random()*2.99);
 			setScreen.find("img").eq(index).fadeIn();
 		}
 	}

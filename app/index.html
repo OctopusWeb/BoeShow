@@ -369,7 +369,39 @@
 						<img src="assets/img/safa/btn1.png" class="tipTitle"/>
 					</div>
 				</div>
-				<div id="call" class="page"></div>
+				<div id="call" class="page">
+					<div id="numberCall">
+						<div class="callBox">
+							<h2>Dialing......</h2>
+							<div class="headList">
+								<div class="headBox">
+									<img src="assets/img/call/headBk.png"/>
+								</div>
+								<div class="headBox">
+									<img src="assets/img/call/headBk.png"/>
+								</div>
+								<div class="headBox selected">
+									<img src="assets/img/call/headBk.png"/>
+									<img src="assets/img/call/head1.png"/>
+								</div>
+								<div class="headBox">
+									<img src="assets/img/call/headBk.png"/>
+								</div>
+								<div class="headBox">
+									<img src="assets/img/call/headBk.png"/>
+								</div>
+							</div>
+							<canvas id="callBk" width="440" height="440"></canvas>
+						</div>
+					</div>
+					<div id="listCall"></div>
+					<img src="assets/img/call/round.png" id="callRund1"/>
+					<div class="tipBtn" id="callTip">
+						<img src="assets/img/call/1.png" class="tipBk"/>
+						<img src="assets/img/call/btn2.png" class="tipTitle selected"/>
+						<img src="assets/img/call/btn1.png" class="tipTitle"/>
+					</div>
+				</div>
 			</div>
 			<div id="menu">
 				<img src="assets/img/top/menu.png"/>
@@ -390,15 +422,15 @@
 	</body>
 	<script type="text/javascript" src="assets/js/bin/jquery.min.js" ></script>
 	<script type="text/javascript" src="assets/js/bin/hammer.min.js" ></script>
-	<script type="text/javascript" src="assets/js/bin/TweenMax.min.js" ></script>
 	<script type="text/javascript" src="assets/js/publicController.js"></script>
 	
 	<script  type="text/javascript" src="assets/js/initController.js"></script>
+	
 	<script  type="text/javascript" src="assets/js/homeController.js"></script>
 	<script  type="text/javascript" src="assets/js/musicController.js"></script>
 	<script  type="text/javascript" src="assets/js/fmController.js"></script>
-	
+	<script  type="text/javascript" src="assets/js/dataController.js"></script>
 	<script  type="text/javascript" src="assets/js/safaController.js"></script>
-	<script  type="text/javascript" src="assets/js/dataController.js"></script> 
+	<script  type="text/javascript" src="assets/js/callController.js"></script> 
 	
 </html>
