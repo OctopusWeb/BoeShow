@@ -357,6 +357,9 @@
 					</div>
 				</div>
 				<div id="form" class="page">
+					<video width="250" height="160" id="xsp"  autoplay="autoplay" loop="loop">
+						<source src="assets/video/xsp.mp4" type="video/mp4"></source>
+					</video>
 					<video width="1080" height="1920" id="safa2"  autoplay="autoplay" loop="loop">
 						<source src="assets/video/safa2.mp4" type="video/mp4"></source>
 					</video>
@@ -531,6 +534,12 @@
 			<img src="assets/img/top/3.jpg"/>
 		</div>
 	</body>
+	<script>
+	window.nodeRequire = require;
+	delete window.require;
+	delete window.exports;
+	delete window.module;
+	</script>
 	<script type="text/javascript" src="assets/js/bin/jquery.min.js" ></script>
 	<script type="text/javascript" src="assets/js/bin/hammer.min.js" ></script>
 	<script type="text/javascript" src="assets/js/publicController.js"></script>
