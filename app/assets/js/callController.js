@@ -4,7 +4,7 @@ var CallController = (function(){
 	var callNum="";
 	var listNum=0;
 	var numberListW = ["410px","160px","-100px","-355px","-605px","-860px"];
-	var numberListN = [[111111111,"AAAA"],[22222222,"BBBBB"],[333333333,"CCCC"],[4444444,"DDDD"],[5555555,"EEEE"],[6666666,"FFFF"]]
+	var numberListN = [[13700499668,"Alice"],[13700499668,"Anastasia"],[13700499668,"Angela"],[13700499668,"Bertha"],[13700499668,"Dave"],[13700499668,"Jacqueline"]]
 	function init(){
 		var call = {};
 		var callTip = $("#callTip");
@@ -95,6 +95,7 @@ var CallController = (function(){
 		function callClear(){
 			callNum="";
 			call.changeNumber(""); 
+			callBox.find("h3").html("");
 			callBtn.eq(0).fadeOut();
 			callBtn.eq(1).fadeIn();
 			callBox.find(".selected").find("img").eq(0).fadeIn();
@@ -133,6 +134,7 @@ var CallController = (function(){
 			})
 			$(".userList").on("click","li",function(){
 				var index = $(".userList li").index($(this));
+				listNum = index;
 				userComplete(index)
 			})
 			function userComplete(listNum){

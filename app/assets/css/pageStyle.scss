@@ -47,6 +47,7 @@ html,body{
         left: 0;
         width:$NomalWidth;
         height:$NomalHeight;
+        overflow: hidden;
         #content{
             width: $NomalWidth;
             height: $NomalHeight;
@@ -80,6 +81,13 @@ html,body{
             display: block;
         }
     }
+    ::-webkit-scrollbar              {opacity: 0;}
+    ::-webkit-scrollbar-button       {opacity: 0;}
+    ::-webkit-scrollbar-track        {opacity: 0;}
+    ::-webkit-scrollbar-track-piece  {opacity: 0;}
+    ::-webkit-scrollbar-thumb        {opacity: 0;}
+    ::-webkit-scrollbar-corner       {opacity: 0;}
+    ::-webkit-resizer                {opacity: 0;}
 }
 
 

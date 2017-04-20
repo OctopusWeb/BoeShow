@@ -14,14 +14,13 @@ var DataController = (function(){
 		obj.page1Show = function(){
 			$at.NumberAnimate(0,100,function(num){
 				obj.part1Animate(num);
-				obj.part2Animate(num,[1.8,0.12,0.54,0.8]);
-				
+				obj.part2Animate(num,[3.6,0.24,0.08,1.6]);
 			});
 		}
 		obj.page2Show = function(){
 			$at.NumberAnimate(0,100,function(num){
 				obj.part3Animate(num);
-				obj.part4Animate(num,[0.01,0.05,0.03,0.03,0.06,0.01,0.01,0.1]);
+				obj.part4Animate(num,[0.02,0.1,0.06,0.06,0.12,0.02,0.02,0.2]);
 			});	
 		}
 		obj.part1Animate = function(num){

@@ -14,7 +14,7 @@ var MusicController = (function(){
 	var musicPage = $(".music");
 	
 	
-	var musicInfo = [["AAAAAAAAA","aaaaaa"],["BBBBBBBBB","bbbbbbbb"],["CCCCCCCCC","cccccccc"],["DDDDDDDD","ddddddd"],["EEEEEEEE","eeeeeee"]]
+	var musicInfo = [["Cooing And Wooing","Dave"],["Xiang Yu’slast Song","Alice"],["Song of The Great Wind","Anastasia"],["Ndomit Able Soul","Bertha"],["Written While Taking","Angela"]]
 	function init(){
 		var music = {};
 		music.tip = function(){
@@ -38,12 +38,13 @@ var MusicController = (function(){
 		music.ListInit = function(){
 			var str='';
 			for (var i=0;i<musicInfo.length;i++) {
-				str += '<li><p>0'+(i+1)+'</p>'
+				str += '<li>'
 				str += '<img src="assets/img/music/head'+(i+1)+'.png" />'
 				str += '<span>'+musicInfo[i][0]+'<strong>/'+musicInfo[i][1]+'</strong></span>'
 				str += '<img src="assets/img/music/musicRight.png" class="musicRight"/></li>'
 				
 			}
+			str = str+str+str;
 			musicList.html(str);
 			musicList.on("click","li",function(){
 				var index = musicList.find("li").index($(this));
@@ -149,6 +150,12 @@ var MusicController = (function(){
 				$(".roundBk").removeClass("selected")
 				$(".roundBk").eq(0).addClass("selected")
 			})
+//			var hammer2 = new Hammer(document.getElementById("musicListbox"));
+//			hammer2.on("tap", function (e) {
+//				if(e.target.nodeName.toUpperCase() == "DIV"){
+//					$("#musicListbox ul").css({"top":e.deltaY})
+//				}
+//			})
 		}
 		return music;
 	}

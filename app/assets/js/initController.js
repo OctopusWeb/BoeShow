@@ -64,18 +64,12 @@ $(function(){
 		timeInfo.find("#week").html(week[w]);
 		escBtn.on("click",function(){
 			setScreen.fadeIn();
-			setScreen.find("img").eq(1).fadeIn();
-			screenInter = setInterval(screenFun,5000);
+			setScreen.find("img").eq(0).fadeIn();
 		})
 		setScreen.on("click",function(){
 			setScreen.fadeOut();
 			setScreen.find("img").fadeOut();
-			clearInterval(screenInter);
 		})
-		function screenFun(){
-			setScreen.find("img").fadeOut();
-			var index = parseInt(Math.random()*2.99);
-			setScreen.find("img").eq(index).fadeIn();
-		}
+		
 	}
 })

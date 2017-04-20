@@ -1,1 +1,214 @@
-@font-face{font-family:numberFont;src:url("../font/DIN-Medium.otf")}@font-face{font-family:stringFont;src:url("../font/PingFangMedium.ttf")}html,body{font-family:numberFont;overflow:hidden}html #wrap,body #wrap{background:-webkit-linear-gradient(top, #081636, #11234f);background:-o-linear-gradient(top, #081636, #11234f);background:-moz-linear-gradient(top, #081636, #11234f);background:linear-gradient(to bottom, #081636, #11234f);position:absolute;display:block;top:0;left:0;width:1080px;height:1920px}html #wrap #content,body #wrap #content{width:1080px;height:1920px}html #wrap #content .page,body #wrap #content .page{position:absolute;top:150px;height:1680px;width:1080px;left:-1080px;opacity:0}html #setScreen,body #setScreen{position:fixed;width:1080px;height:1920px;top:0;left:0;z-index:100;background:#000;display:none}html #setScreen img,body #setScreen img{position:absolute;left:0;top:0;height:1920px;width:1080px;display:none}html #setScreen .selected,body #setScreen .selected{display:block}#top{position:absolute;width:1080px;z-index:100}#top #escBtn{display:none;width:47px;height:47px;position:absolute;left:37px;top:43px}#top #escBtn img{position:absolute;width:47px;height:47px;top:0;left:0}#top #escBtn .selected:active{display:none}#top #homeBtn{width:47px;height:47px;position:absolute;left:37px;top:43px}#top #homeBtn img{position:absolute;width:47px;height:47px;top:0;left:0}#top #homeBtn .selected:active{display:none}#top #timeInfo{position:absolute;line-height:30px;font-size:26px;color:#bbcfea;width:300px;top:50px;left:100px}#top #timeInfo div{float:left;margin-left:15px}#top #power{position:absolute;left:750px;top:55px}#top #power ul{position:absolute;width:200px}#top #power ul li{float:left;list-style:none;margin-left:4px}#top #power p{position:absolute;color:#bbcfea;left:90px;font-size:24px;top:-5px}#top #power span{position:absolute;color:#bbcfea;left:170px;font-size:24px;top:-5px}#menu{position:absolute;top:1770px;width:1080px;height:150px;left:0}#menu img{height:150px;width:1080px;position:absolute}#menu ul{position:absolute;height:150px;width:1080px;position:absolute}#menu ul li{width:20%;float:left;height:150px;list-style:none;background:transparent}#menu ul .selected{background:rgba(58,141,232,0.5)}#home{width:1080px;overflow:hidden}#home #bk{width:1080px;position:absolute;top:500px}#home #carName{left:55px;top:60px;position:absolute}#home #carTitle{position:absolute;width:442px;height:400px;top:60px;left:590px}#home #carTitle img{width:442px;height:319px;position:absolute;left:0;top:0}#home #carTitle #carNum{width:442px}#home #carTitle #carNum p{float:left;width:70px;text-align:center;color:#bbcfea;font-size:30px;margin-top:-10px}#home #carTitle #carNum .carNext{margin-left:180px}#home #carTitle .proBar{width:440px;height:60px;float:left;margin-top:50px}#home #carTitle .proBar p{color:#c7d6ed;font-size:24px;width:100%;text-align:right;margin-top:-6px}#home #carTitle .proBar .box{width:100%;background:#061029;height:30px;float:left;margin-top:15px;border-radius:15px}#home #carTitle .proBar .box .bar{width:0%;height:22px;border-radius:11px;float:left;margin-top:4px;background:-webkit-linear-gradient(top, #c5d5ec, #7d9fc5);background:-o-linear-gradient(top, #c5d5ec, #7d9fc5);background:-moz-linear-gradient(top, #c5d5ec, #7d9fc5);background:linear-gradient(to bottom, #c5d5ec, #7d9fc5);margin-left:3px}#home #carPower{width:820px;height:160px;position:absolute;left:140px;top:1377px}#home #carPower p{font-size:34px;color:#6f91be;float:left;margin-top:80px}#home #carPower #carnext{float:right}#home #carPower span{font-size:40px;color:#89abd8;position:absolute;left:350px;top:0}#home #carPower #powerBar{width:490px;height:66px;position:absolute;background:url(../img/top/powerBk.png);left:160px;top:90px}#home #carPower #powerBar .powerBar1{margin-left:28px}#home #carPower #powerBar .powerBar2{background:url(../img/top/powerbK3.png);width:0px}#home #carPower #powerBar .powerBar{height:42px;float:left}#home #carPic{position:absolute;width:1080px;height:650px;top:350px;z-index:100;left:-290px}#home #carBkPic{position:absolute;width:1080px;height:300px;top:950px;left:0px}#locationVideo{position:absolute;top:-150px;left:0}#form video{position:absolute;top:-150px;left:0px}#form #xsp{position:absolute;left:750px;top:230px;z-index:100}#form #safaTip{width:612px;margin-left:-306px}.tipBtn{position:absolute;left:50%;top:66px;height:80px}.tipBtn .tipBk{position:absolute;top:0;left:0;width:100%}.tipBtn .tipTitle{position:absolute;top:0;left:0;display:none}.tipBtn .selected{display:block}#data #dataTip{width:612px;margin-left:-306px}#data #data2{display:none}#data #data2 ul li{line-height:145px;margin-bottom:0;margin-top:90px;font-size:30px}#data #data2 ul li strong{font-size:16px}#data #data2 .dataList p{width:34%;margin-left:0;padding-left:210px;line-height:80px;font-size:30px}#data .data{position:absolute;width:1080px;height:1300px}#data .data .data1Bk{top:242px;left:80px;width:920px;position:absolute}#data .data ul{top:242px;left:80px;width:920px;position:absolute;height:920px}#data .data ul li{float:left;width:25%;text-align:center;color:#fff;list-style:none;font-size:40px;line-height:210px;margin-bottom:15px}#data .data ul li strong{font-size:20px;font-weight:300}#data .data .round1{position:absolute;width:100%;top:760px;left:0}#data .data .round2{position:absolute;width:100%;top:870px;left:0}#data .data .dataInfo{position:absolute;top:790px;left:170px;height:130px}#data .data .dataInfo div{position:absolute;width:66px;height:66px}#data .data .dataInfo div img{position:absolute;left:0;top:0}#data .data .dataInfo p{position:absolute;top:-20px;width:50px;width:80px;text-align:center;font-size:12px;color:#ccc;left:-10px}#data .data .dataInfo .o1{top:80px;left:95px}#data .data .dataInfo .o2{height:96px;width:96px;top:30px;left:315px}#data .data .dataInfo .o2 p{font-size:16px;width:116px;top:-30px}#data .data .dataInfo .o3{top:80px;left:575px}#data .data .dataInfo .selected .o{display:none}#data .data .dataList{position:absolute;width:950px;height:500px;left:65px;top:970px}#data .data .dataList img{position:absolute;width:100%;left:0;top:65px}#data .data .dataList p{float:left;width:50%;text-align:left;font-size:50px;color:#fff;margin-left:480px;line-height:190px;font-weight:400}#data .data .dataList p strong{font-size:20px;font-weight:200}#music #musicTip{width:612px;height:80px;margin-left:-306px}#music .music{position:absolute;top:200px;width:1080px;height:1400px;overflow:hidden}#music .music1 h1{font-size:36px;width:100%;text-align:center;color:#fff;font-weight:400}#music .music1 h2{font-size:26px;width:100%;text-align:center;color:#7a8aa4;font-weight:400}#music .music1 #music1Box{position:absolute;width:2160px;height:570px}#music .music1 #music1Box .box{width:1080px;float:left;height:570px;margin-top:30px;position:relative}#music .music1 #music1Box .box .musicImg{position:absolute;left:50%;top:50%;transform:translate(-50%, -50%);-ms-transform:translate(-50%, -50%);-webkit-transform:translate(-50%, -50%);-o-transform:translate(-50%, -50%);-moz-transform:translate(-50%, -50%)}#music .music1 #music1Box .box .musicRound{transform:translate(-50%, -50%) rotate(0deg);-ms-transform:translate(-50%, -50%) rotate(0deg);-webkit-transform:translate(-50%, -50%) rotate(0deg);-o-transform:translate(-50%, -50%) rotate(0deg);-moz-transform:translate(-50%, -50%) rotate(0deg);animation:myfirst 5s linear 0s infinite normal;-moz-animation:myfirst 5s linear 0s infinite normal;-webkit-animation:myfirst 5s linear 0s infinite normal;-o-animation:myfirst 5s linear 0s infinite normal}#music .music1 #music1Box .box .musicPause{-webkit-animation-play-state:paused;-moz-animation-play-state:paused}#music .music1 #music1Box .box #musicBk{width:1080px;position:absolute;top:0;left:80px;height:570px}#music .music1 #music1Box #event{position:absolute;left:0;top:0;z-index:10;width:2160px;height:570px}#music .music1 #musicPro{width:90px;position:absolute;top:720px;left:500px}#music .music1 #musicPro .roundBk{float:left;width:16px;height:16px;background:#17357e;border-radius:50%;margin-left:25px}#music .music1 #musicPro .selected{background:#2668fc}#music .music1 #musicInfo{width:850px;position:absolute;left:115px;top:760px;height:28px}#music .music1 #musicInfo p{position:absolute;width:100px;font-size:16px;color:#fff;text-align:left;line-height:28px;left:0}#music .music1 #musicInfo span{position:absolute;right:0;width:100px;font-size:16px;color:#fff;text-align:right;line-height:28px}#music .music1 #musicInfo .proBar{width:640px;height:28px;position:absolute;left:100px;top:0}#music .music1 #musicInfo .proBar .barBk{height:4px;position:absolute;background:#0b1634;left:0;width:640px;top:12px;border-radius:2px}#music .music1 #musicInfo .proBar .bar{height:10px;position:absolute;top:9px;left:0;width:0%;border-radius:5px;background:-webkit-linear-gradient(top, #c5d5ec, #7d9fc5);background:-o-linear-gradient(top, #c5d5ec, #7d9fc5);background:-moz-linear-gradient(top, #c5d5ec, #7d9fc5);background:linear-gradient(to bottom, #c5d5ec, #7d9fc5)}#music .music1 #musicInfo .proBar .bar img{position:absolute;right:-14px;top:-8px}#music .music1 #musicController{position:absolute;top:820px;width:850px;left:115px;height:150px}#music .music1 #musicController div{position:absolute}#music .music1 #musicController .random{width:54px;height:40px;top:55px}#music .music1 #musicController .pre{width:137px;height:137px;top:6px;left:200px}#music .music1 #musicController .play{width:165px;height:165px;top:0;left:360px}#music .music1 #musicController .pause{width:165px;height:165px;top:0;left:360px;display:none}#music .music1 #musicController .next{width:137px;height:137px;top:6px;left:556px}#music .music1 #musicController .xunhuan{width:54px;height:40px;top:55px;left:800px}#music .music1 #musicController img{position:absolute}#music .music1 #musicController .selected:active{display:none}#music #musicList{position:absolute;top:1040px;width:850px;left:115px;z-index:10}#music #musicList h1{line-height:50px;float:left;width:100%;text-align:center;margin-bottom:20px}#music #musicList ul{width:100%;height:280px;overflow:auto}#music #musicList li{width:100%;float:left;height:50px;position:relative;background:rgba(0,0,0,0.3);margin-top:5px;list-style:none}#music #musicList li p{float:left;line-height:50px;color:#fff;width:34px;text-align:center}#music #musicList li img{width:36px;height:36px;float:left;border-radius:50%;margin-top:7px;margin-left:10px}#music #musicList li span{line-height:50px;color:#fff;font-size:20px;margin-left:20px;font-weight:300}#music #musicList li span strong{font-size:16px;color:#576280}#music #musicList li .musicRight{position:absolute;width:5px;height:21px;border-radius:0;margin:0;right:15px;top:15px}#music #musicList .selected{background:#0e2c7a}#music .round{position:absolute;top:1190px;width:1080px;left:0}#music .music2{display:none;left:0px}#music .music2 h1{font-size:36px;width:100%;text-align:center;color:#fff;font-weight:400}#music .music2 #fmBox{width:1080px;height:1060px;position:absolute;top:-200px}#music .music2 #fmBox h2{width:1080px;color:#fff;line-height:1050px;font-size:100px;font-weight:400;position:absolute;text-align:center;left:-10px;z-index:10}#music .music2 #fmBox .fmbk{left:12px;position:absolute}#music .music2 #fmBox .musicRound2{position:absolute;top:50%;left:50%;animation:myfirst 5s linear 0s infinite normal;-moz-animation:myfirst 5s linear 0s infinite normal;-webkit-animation:myfirst 5s linear 0s infinite normal;-o-animation:myfirst 5s linear 0s infinite normal}#music .music2 #fmBox .musicPause{-webkit-animation-play-state:paused;-moz-animation-play-state:paused}#music .music2 #fmGroup{position:absolute;top:650px;width:835px;height:85px;left:123px;z-index:10}#music .music2 #fmGroup .fmBtn{height:175px;position:absolute;left:0;top:-40px;width:50%;background:-webkit-linear-gradient(left, rgba(13,80,238,0), rgba(13,80,238,0.3));background:-o-linear-gradient(left, rgba(13,80,238,0), rgba(13,80,238,0.3));background:-moz-linear-gradient(left, rgba(13,80,238,0), rgba(13,80,238,0.3));background:linear-gradient(to right, rgba(13,80,238,0), rgba(13,80,238,0.3))}#music .music2 #fmGroup .fmBtn img{position:absolute;top:-25px;right:-25px}#music .music2 #fmControler{position:absolute;top:820px;width:850px;left:115px;height:150px}#music .music2 #fmControler div{position:absolute}#music .music2 #fmControler img{position:absolute}#music .music2 #fmControler .pre{width:137px;height:137px;top:6px;left:200px}#music .music2 #fmControler .stop{width:165px;height:165px;top:0;left:360px;display:none}#music .music2 #fmControler .play{width:165px;height:165px;top:0;left:360px}#music .music2 #fmControler .next{width:137px;height:137px;top:6px;left:556px}#music .music2 #fmControler .selected:active{display:none}#music .music2 #fmList{position:absolute;top:1040px;width:850px;left:115px;z-index:10}#music .music2 #fmList h1{line-height:50px;float:left;width:100%;text-align:center;margin-bottom:20px}#music .music2 #fmList ul{width:100%;height:280px;overflow:auto}#music .music2 #fmList li{width:100%;float:left;height:50px;position:relative;background:rgba(0,0,0,0.3);margin-top:5px;list-style:none}#music .music2 #fmList li p{float:left;line-height:50px;color:#fff;width:34px;text-align:center}#music .music2 #fmList li span{line-height:50px;color:#fff;font-size:20px;margin-left:20px;font-weight:300}#music .music2 #fmList li h3{float:right;line-height:50px;color:#fff;font-size:20px;margin-right:20px;font-weight:300}#music .music2 #fmList li .musicRight{position:absolute;width:5px;height:21px;border-radius:0;margin:0;right:15px;top:15px}#music .music2 #fmList .selected{background:#0e2c7a}@keyframes myfirst{from{transform:translate(-50%, -50%) rotate(360deg);-ms-transform:translate(-50%, -50%) rotate(360deg);-webkit-transform:translate(-50%, -50%) rotate(360deg);-o-transform:translate(-50%, -50%) rotate(360deg);-moz-transform:translate(-50%, -50%) rotate(360deg)}to{transform:translate(-50%, -50%) rotate(0deg);-ms-transform:translate(-50%, -50%) rotate(0deg);-webkit-transform:translate(-50%, -50%) rotate(0deg);-o-transform:translate(-50%, -50%) rotate(0deg);-moz-transform:translate(-50%, -50%) rotate(0deg)}}@-moz-keyframes myfirst{from{transform:translate(-50%, -50%) rotate(360deg);-ms-transform:translate(-50%, -50%) rotate(360deg);-webkit-transform:translate(-50%, -50%) rotate(360deg);-o-transform:translate(-50%, -50%) rotate(360deg);-moz-transform:translate(-50%, -50%) rotate(360deg)}to{transform:translate(-50%, -50%) rotate(0deg);-ms-transform:translate(-50%, -50%) rotate(0deg);-webkit-transform:translate(-50%, -50%) rotate(0deg);-o-transform:translate(-50%, -50%) rotate(0deg);-moz-transform:translate(-50%, -50%) rotate(0deg)}}@-webkit-keyframes myfirst{from{transform:translate(-50%, -50%) rotate(360deg);-ms-transform:translate(-50%, -50%) rotate(360deg);-webkit-transform:translate(-50%, -50%) rotate(360deg);-o-transform:translate(-50%, -50%) rotate(360deg);-moz-transform:translate(-50%, -50%) rotate(360deg)}to{transform:translate(-50%, -50%) rotate(0deg);-ms-transform:translate(-50%, -50%) rotate(0deg);-webkit-transform:translate(-50%, -50%) rotate(0deg);-o-transform:translate(-50%, -50%) rotate(0deg);-moz-transform:translate(-50%, -50%) rotate(0deg)}}@-o-keyframes myfirst{from{transform:translate(-50%, -50%) rotate(360deg);-ms-transform:translate(-50%, -50%) rotate(360deg);-webkit-transform:translate(-50%, -50%) rotate(360deg);-o-transform:translate(-50%, -50%) rotate(360deg);-moz-transform:translate(-50%, -50%) rotate(360deg)}to{transform:translate(-50%, -50%) rotate(0deg);-ms-transform:translate(-50%, -50%) rotate(0deg);-webkit-transform:translate(-50%, -50%) rotate(0deg);-o-transform:translate(-50%, -50%) rotate(0deg);-moz-transform:translate(-50%, -50%) rotate(0deg)}}#call{width:1080px;height:1920px;position:absolute;overflow:hidden}#call #callTip{width:612px;height:80px;margin-left:-306px}#call #numberCall,#call #listCall{position:absolute;width:1080px;top:255px}#call #numberCall h2,#call #listCall h2{width:100%;text-align:center;color:#fff;font-size:30px;font-weight:300;display:none}#call #numberCall h3,#call #listCall h3{position:absolute;width:100%;text-align:center;color:#878ea1;font-size:30px;font-weight:300;top:480px}#call #numberCall h4,#call #listCall h4{position:absolute;width:100%;text-align:center;color:#fff;font-size:32px;font-weight:300;top:520px}#call #numberCall .headList,#call #listCall .headList{position:absolute;width:5000px;height:440px;top:140px;left:-100px}#call #numberCall .headList .headBox,#call #listCall .headList .headBox{float:left;width:255px;height:255px;display:block;position:relative;opacity:0.2}#call #numberCall .headList .headBox img,#call #listCall .headList .headBox img{position:absolute;top:50%;left:50%;transform:translate(-50%, -50%) scale(0.7);-webkit-transform:translate(-50%, -50%) scale(0.7);-moz-transform:translate(-50%, -50%) scale(0.7)}#call #numberCall .headList .selected,#call #listCall .headList .selected{transform:scale(1.3);-webkit-transform:scale(1.3);-moz-transform:scale(1.3);opacity:1;z-index:10}#call #numberCall .callBtn .btn,#call #listCall .callBtn .btn{position:absolute;top:640px;z-index:10;left:50%;margin-left:-50px}#call #numberCall .numberList,#call #listCall .numberList{width:600px;position:absolute;left:50%;margin-left:-300px;top:900px;z-index:100}#call #numberCall .numberList ul,#call #listCall .numberList ul{width:100%;float:left}#call #numberCall .numberList ul li,#call #listCall .numberList ul li{list-style:none;width:190px;float:left;margin-left:10px;margin-top:10px;border-radius:10px;height:70px;line-height:70px;color:#fff;font-size:36px;text-align:center;border:1px solid #10214c;background:#0b132b}#call #numberCall .numberList ul li:active,#call #listCall .numberList ul li:active{background:#06ac88}#call #numberCall .numberList ul .play,#call #listCall .numberList ul .play{background:#06ac88;width:390px}#call #listCall{display:none}#call #listCall .headList{left:410px}#call #listCall #numberBk{width:1080px;height:500px;position:absolute;top:0;left:0;z-index:100}#call #listCall .userList{width:850px;position:absolute;top:880px;left:115px;z-index:100;height:460px;overflow:hidden}#call #listCall .userList h1{font-size:30px;width:100%;float:left;line-height:30px;text-align:center;color:#535e7c}#call #listCall .userList ul{width:850px;float:left;height:430px}#call #listCall .userList ul li{list-style:none;height:66px;background:rgba(0,0,0,0.3);width:850px;float:left;margin-top:5px;font-family:stringFont;position:relative}#call #listCall .userList ul li img{width:40px;float:left;height:40px;margin:13px}#call #listCall .userList ul li h5{width:70%;float:left;font-size:20px;color:#fff;line-height:20px;font-weight:300;margin-top:15px;margin-left:20px}#call #listCall .userList ul li h6{width:70%;float:left;font-size:18px;color:#576484;line-height:18px;font-weight:300;margin-top:3px;margin-left:18px}#call #listCall .userList ul li span{color:#fff;position:absolute;font-size:20px;line-height:60px;right:20px}#call #listCall .userList ul .selected{background:#0e2c7a}#call #callBk{position:absolute;width:440px;height:440px;left:50%;margin-left:-220px;top:300px;display:none}#call #callRund1{position:absolute;top:1034px}#call .callRund2{width:1080px;position:absolute;top:680px}
+@font-face { font-family: numberFont; src: url("../font/DIN-Medium.otf"); }
+@font-face { font-family: stringFont; src: url("../font/PingFangMedium.ttf"); }
+html, body { font-family: numberFont; overflow: hidden; }
+html #wrap, body #wrap { background: -webkit-linear-gradient(top, #081636, #11234f); background: -o-linear-gradient(top, #081636, #11234f); background: -moz-linear-gradient(top, #081636, #11234f); background: linear-gradient(to bottom, #081636, #11234f); position: absolute; display: block; top: 0; left: 0; width: 1080px; height: 1920px; overflow: hidden; }
+html #wrap #content, body #wrap #content { width: 1080px; height: 1920px; }
+html #wrap #content .page, body #wrap #content .page { position: absolute; top: 150px; height: 1680px; width: 1080px; left: -1080px; opacity: 0; }
+html #setScreen, body #setScreen { position: fixed; width: 1080px; height: 1920px; top: 0; left: 0; z-index: 100; background: #000; display: none; }
+html #setScreen img, body #setScreen img { position: absolute; left: 0; top: 0; height: 1920px; width: 1080px; display: none; }
+html #setScreen .selected, body #setScreen .selected { display: block; }
+html ::-webkit-scrollbar, body ::-webkit-scrollbar { opacity: 0; }
+html ::-webkit-scrollbar-button, body ::-webkit-scrollbar-button { opacity: 0; }
+html ::-webkit-scrollbar-track, body ::-webkit-scrollbar-track { opacity: 0; }
+html ::-webkit-scrollbar-track-piece, body ::-webkit-scrollbar-track-piece { opacity: 0; }
+html ::-webkit-scrollbar-thumb, body ::-webkit-scrollbar-thumb { opacity: 0; }
+html ::-webkit-scrollbar-corner, body ::-webkit-scrollbar-corner { opacity: 0; }
+html ::-webkit-resizer, body ::-webkit-resizer { opacity: 0; }
+
+#top { position: absolute; width: 1080px; z-index: 100; }
+#top #escBtn { display: none; width: 47px; height: 47px; position: absolute; left: 37px; top: 43px; }
+#top #escBtn img { position: absolute; width: 47px; height: 47px; top: 0; left: 0; }
+#top #escBtn .selected:active { display: none; }
+#top #homeBtn { width: 47px; height: 47px; position: absolute; left: 37px; top: 43px; }
+#top #homeBtn img { position: absolute; width: 47px; height: 47px; top: 0; left: 0; }
+#top #homeBtn .selected:active { display: none; }
+#top #timeInfo { position: absolute; line-height: 30px; font-size: 26px; color: #bbcfea; width: 300px; top: 50px; left: 100px; }
+#top #timeInfo div { float: left; margin-left: 15px; }
+#top #power { position: absolute; left: 750px; top: 55px; }
+#top #power ul { position: absolute; width: 200px; }
+#top #power ul li { float: left; list-style: none; margin-left: 4px; }
+#top #power p { position: absolute; color: #bbcfea; left: 90px; font-size: 24px; top: -5px; }
+#top #power span { position: absolute; color: #bbcfea; left: 170px; font-size: 24px; top: -5px; }
+
+#menu { position: absolute; top: 1770px; width: 1080px; height: 150px; left: 0; }
+#menu img { height: 150px; width: 1080px; position: absolute; }
+#menu ul { position: absolute; height: 150px; width: 1080px; position: absolute; }
+#menu ul li { width: 20%; float: left; height: 150px; list-style: none; background: transparent; }
+#menu ul .selected { background: rgba(58, 141, 232, 0.5); }
+
+#home { width: 1080px; overflow: hidden; }
+#home #bk { width: 1080px; position: absolute; top: 500px; }
+#home #carName { left: 55px; top: 60px; position: absolute; }
+#home #carTitle { position: absolute; width: 442px; height: 400px; top: 60px; left: 590px; }
+#home #carTitle img { width: 442px; height: 319px; position: absolute; left: 0; top: 0; }
+#home #carTitle #carNum { width: 442px; }
+#home #carTitle #carNum p { float: left; width: 70px; text-align: center; color: #bbcfea; font-size: 30px; margin-top: -10px; }
+#home #carTitle #carNum .carNext { margin-left: 180px; }
+#home #carTitle .proBar { width: 440px; height: 60px; float: left; margin-top: 50px; }
+#home #carTitle .proBar p { color: #c7d6ed; font-size: 24px; width: 100%; text-align: right; margin-top: -6px; }
+#home #carTitle .proBar .box { width: 100%; background: #061029; height: 30px; float: left; margin-top: 15px; border-radius: 15px; }
+#home #carTitle .proBar .box .bar { width: 0%; height: 22px; border-radius: 11px; float: left; margin-top: 4px; background: -webkit-linear-gradient(top, #c5d5ec, #7d9fc5); background: -o-linear-gradient(top, #c5d5ec, #7d9fc5); background: -moz-linear-gradient(top, #c5d5ec, #7d9fc5); background: linear-gradient(to bottom, #c5d5ec, #7d9fc5); margin-left: 3px; }
+#home #carPower { width: 820px; height: 160px; position: absolute; left: 140px; top: 1377px; }
+#home #carPower p { font-size: 34px; color: #6f91be; float: left; margin-top: 80px; }
+#home #carPower #carnext { float: right; }
+#home #carPower span { font-size: 40px; color: #89abd8; position: absolute; left: 350px; top: 0; }
+#home #carPower #powerBar { width: 490px; height: 66px; position: absolute; background: url(../img/top/powerBk.png); left: 160px; top: 90px; }
+#home #carPower #powerBar .powerBar1 { margin-left: 28px; }
+#home #carPower #powerBar .powerBar2 { background: url(../img/top/powerbK3.png); width: 0px; }
+#home #carPower #powerBar .powerBar { height: 42px; float: left; }
+#home #carPic { position: absolute; width: 1080px; height: 650px; top: 350px; z-index: 100; left: -290px; }
+#home #carBkPic { position: absolute; width: 1080px; height: 300px; top: 950px; left: 0px; }
+
+#locationVideo { position: absolute; top: -150px; left: 0; }
+
+#form video { position: absolute; top: -150px; left: 0px; }
+#form #xsp { position: absolute; left: 750px; top: 230px; z-index: 100; }
+#form #safaTip { width: 612px; margin-left: -306px; }
+
+.tipBtn { position: absolute; left: 50%; top: 66px; height: 80px; }
+.tipBtn .tipBk { position: absolute; top: 0; left: 0; width: 100%; }
+.tipBtn .tipTitle { position: absolute; top: 0; left: 0; display: none; }
+.tipBtn .selected { display: block; }
+
+#data #dataTip { width: 612px; margin-left: -306px; }
+#data #data2 { display: none; }
+#data #data2 ul li { line-height: 145px; margin-bottom: 0; margin-top: 90px; font-size: 30px; }
+#data #data2 ul li strong { font-size: 16px; }
+#data #data2 .dataList p { width: 34%; margin-left: 0; padding-left: 210px; line-height: 80px; font-size: 30px; }
+#data .data { position: absolute; width: 1080px; height: 1300px; }
+#data .data .data1Bk { top: 242px; left: 80px; width: 920px; position: absolute; }
+#data .data ul { top: 242px; left: 80px; width: 920px; position: absolute; height: 920px; }
+#data .data ul li { float: left; width: 25%; text-align: center; color: #fff; list-style: none; font-size: 40px; line-height: 210px; margin-bottom: 15px; }
+#data .data ul li strong { font-size: 20px; font-weight: 300; }
+#data .data .round1 { position: absolute; width: 100%; top: 760px; left: 0; }
+#data .data .round2 { position: absolute; width: 100%; top: 870px; left: 0; }
+#data .data .dataInfo { position: absolute; top: 790px; left: 170px; height: 130px; }
+#data .data .dataInfo div { position: absolute; width: 66px; height: 66px; }
+#data .data .dataInfo div img { position: absolute; left: 0; top: 0; display: none; }
+#data .data .dataInfo div .o { top: 13px; left: 13px; display: block; }
+#data .data .dataInfo p { position: absolute; top: -20px; width: 96px; width: 80px; text-align: center; font-size: 12px; color: #ccc; }
+#data .data .dataInfo .o1 { top: 80px; left: 95px; }
+#data .data .dataInfo .o2 { height: 96px; width: 96px; top: 30px; left: 315px; }
+#data .data .dataInfo .o3 { top: 80px; left: 575px; }
+#data .data .dataInfo .selected img { display: block; }
+#data .data .dataInfo .selected .o { display: none; }
+#data .data .dataInfo .selected p { font-size: 16px; width: 96px; top: -30px; }
+#data .data .dataList { position: absolute; width: 950px; height: 500px; left: 65px; top: 970px; }
+#data .data .dataList img { position: absolute; width: 100%; left: 0; top: 65px; }
+#data .data .dataList p { float: left; width: 50%; text-align: left; font-size: 50px; color: #fff; margin-left: 480px; line-height: 190px; font-weight: 400; }
+#data .data .dataList p strong { font-size: 20px; font-weight: 200; }
+
+#music #musicTip { width: 612px; height: 80px; margin-left: -306px; }
+#music .music { position: absolute; top: 200px; width: 1080px; height: 1400px; overflow: hidden; }
+#music .music1 h1 { font-size: 36px; width: 100%; text-align: center; color: #fff; font-weight: 400; }
+#music .music1 h2 { font-size: 26px; width: 100%; text-align: center; color: #7a8aa4; font-weight: 400; }
+#music .music1 #music1Box { position: absolute; width: 2160px; height: 570px; }
+#music .music1 #music1Box .box { width: 1080px; float: left; height: 570px; margin-top: 30px; position: relative; }
+#music .music1 #music1Box .box .musicImg { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); }
+#music .music1 #music1Box .box .musicRound { transform: translate(-50%, -50%) rotate(0deg); -ms-transform: translate(-50%, -50%) rotate(0deg); -webkit-transform: translate(-50%, -50%) rotate(0deg); -o-transform: translate(-50%, -50%) rotate(0deg); -moz-transform: translate(-50%, -50%) rotate(0deg); animation: myfirst 5s linear 0s infinite normal; -moz-animation: myfirst 5s linear 0s infinite normal; -webkit-animation: myfirst 5s linear 0s infinite normal; -o-animation: myfirst 5s linear 0s infinite normal; }
+#music .music1 #music1Box .box .musicPause { -webkit-animation-play-state: paused; -moz-animation-play-state: paused; }
+#music .music1 #music1Box .box #musicBk { width: 1080px; position: absolute; top: 0; left: 80px; height: 570px; }
+#music .music1 #music1Box #event { position: absolute; left: 0; top: 0; z-index: 10; width: 2160px; height: 570px; }
+#music .music1 #musicPro { width: 90px; position: absolute; top: 720px; left: 500px; }
+#music .music1 #musicPro .roundBk { float: left; width: 16px; height: 16px; background: #17357e; border-radius: 50%; margin-left: 25px; }
+#music .music1 #musicPro .selected { background: #2668fc; }
+#music .music1 #musicInfo { width: 850px; position: absolute; left: 115px; top: 760px; height: 28px; }
+#music .music1 #musicInfo p { position: absolute; width: 100px; font-size: 16px; color: #fff; text-align: left; line-height: 28px; left: 0; }
+#music .music1 #musicInfo span { position: absolute; right: 0; width: 100px; font-size: 16px; color: #fff; text-align: right; line-height: 28px; }
+#music .music1 #musicInfo .proBar { width: 640px; height: 28px; position: absolute; left: 100px; top: 0; }
+#music .music1 #musicInfo .proBar .barBk { height: 4px; position: absolute; background: #0b1634; left: 0; width: 640px; top: 12px; border-radius: 2px; }
+#music .music1 #musicInfo .proBar .bar { height: 10px; position: absolute; top: 9px; left: 0; width: 0%; border-radius: 5px; background: -webkit-linear-gradient(top, #c5d5ec, #7d9fc5); background: -o-linear-gradient(top, #c5d5ec, #7d9fc5); background: -moz-linear-gradient(top, #c5d5ec, #7d9fc5); background: linear-gradient(to bottom, #c5d5ec, #7d9fc5); }
+#music .music1 #musicInfo .proBar .bar img { position: absolute; right: -14px; top: -8px; }
+#music .music1 #musicController { position: absolute; top: 820px; width: 850px; left: 115px; height: 150px; }
+#music .music1 #musicController div { position: absolute; }
+#music .music1 #musicController .random { width: 54px; height: 40px; top: 55px; }
+#music .music1 #musicController .pre { width: 137px; height: 137px; top: 6px; left: 200px; }
+#music .music1 #musicController .play { width: 165px; height: 165px; top: 0; left: 360px; }
+#music .music1 #musicController .pause { width: 165px; height: 165px; top: 0; left: 360px; display: none; }
+#music .music1 #musicController .next { width: 137px; height: 137px; top: 6px; left: 556px; }
+#music .music1 #musicController .xunhuan { width: 54px; height: 40px; top: 55px; left: 800px; }
+#music .music1 #musicController img { position: absolute; }
+#music .music1 #musicController .selected:active { display: none; }
+#music #musicList { position: absolute; top: 1040px; width: 850px; left: 115px; z-index: 10; }
+#music #musicList h1 { line-height: 50px; float: left; width: 100%; text-align: center; margin-bottom: 20px; }
+#music #musicList #musicListbox { width: 100%; height: 280px; overflow: hidden; position: relative; }
+#music #musicList ul { width: 100%; position: absolute; }
+#music #musicList li { width: 100%; float: left; height: 50px; position: relative; background: rgba(0, 0, 0, 0.3); margin-top: 5px; list-style: none; }
+#music #musicList li p { float: left; line-height: 50px; color: #fff; width: 34px; text-align: center; }
+#music #musicList li img { width: 36px; height: 36px; float: left; border-radius: 50%; margin-top: 7px; margin-left: 10px; }
+#music #musicList li span { line-height: 50px; color: #fff; font-size: 20px; margin-left: 20px; font-weight: 300; }
+#music #musicList li span strong { font-size: 16px; color: #576280; }
+#music #musicList li .musicRight { position: absolute; width: 5px; height: 21px; border-radius: 0; margin: 0; right: 15px; top: 15px; }
+#music #musicList .selected { background: #0e2c7a; }
+#music .round { position: absolute; top: 1190px; width: 1080px; left: 0; }
+#music .music2 { display: none; left: 0px; }
+#music .music2 h1 { font-size: 36px; width: 100%; text-align: center; color: #fff; font-weight: 400; }
+#music .music2 #fmBox { width: 1080px; height: 1060px; position: absolute; top: -200px; }
+#music .music2 #fmBox h2 { width: 1080px; color: #fff; line-height: 1050px; font-size: 100px; font-weight: 400; position: absolute; text-align: center; left: -10px; z-index: 10; }
+#music .music2 #fmBox .fmbk { left: 12px; position: absolute; }
+#music .music2 #fmBox .musicRound2 { position: absolute; top: 50%; left: 50%; animation: myfirst 5s linear 0s infinite normal; -moz-animation: myfirst 5s linear 0s infinite normal; -webkit-animation: myfirst 5s linear 0s infinite normal; -o-animation: myfirst 5s linear 0s infinite normal; }
+#music .music2 #fmBox .musicPause { -webkit-animation-play-state: paused; -moz-animation-play-state: paused; }
+#music .music2 #fmGroup { position: absolute; top: 650px; width: 835px; height: 85px; left: 123px; z-index: 10; }
+#music .music2 #fmGroup .fmBtn { height: 175px; position: absolute; left: 0; top: -40px; width: 50%; background: -webkit-linear-gradient(left, rgba(13, 80, 238, 0), rgba(13, 80, 238, 0.3)); background: -o-linear-gradient(left, rgba(13, 80, 238, 0), rgba(13, 80, 238, 0.3)); background: -moz-linear-gradient(left, rgba(13, 80, 238, 0), rgba(13, 80, 238, 0.3)); background: linear-gradient(to right, rgba(13, 80, 238, 0), rgba(13, 80, 238, 0.3)); }
+#music .music2 #fmGroup .fmBtn img { position: absolute; top: -25px; right: -25px; }
+#music .music2 #fmControler { position: absolute; top: 820px; width: 850px; left: 115px; height: 150px; }
+#music .music2 #fmControler div { position: absolute; }
+#music .music2 #fmControler img { position: absolute; }
+#music .music2 #fmControler .pre { width: 137px; height: 137px; top: 6px; left: 200px; }
+#music .music2 #fmControler .stop { width: 165px; height: 165px; top: 0; left: 360px; display: none; }
+#music .music2 #fmControler .play { width: 165px; height: 165px; top: 0; left: 360px; }
+#music .music2 #fmControler .next { width: 137px; height: 137px; top: 6px; left: 556px; }
+#music .music2 #fmControler .selected:active { display: none; }
+#music .music2 #fmList { position: absolute; top: 1040px; width: 850px; left: 115px; z-index: 10; }
+#music .music2 #fmList h1 { line-height: 50px; float: left; width: 100%; text-align: center; margin-bottom: 20px; }
+#music .music2 #fmList ul { width: 100%; height: 280px; overflow: auto; }
+#music .music2 #fmList li { width: 100%; float: left; height: 50px; position: relative; background: rgba(0, 0, 0, 0.3); margin-top: 5px; list-style: none; }
+#music .music2 #fmList li p { float: left; line-height: 50px; color: #fff; width: 34px; text-align: center; }
+#music .music2 #fmList li span { line-height: 50px; color: #fff; font-size: 20px; margin-left: 20px; font-weight: 300; }
+#music .music2 #fmList li h3 { float: right; line-height: 50px; color: #fff; font-size: 20px; margin-right: 20px; font-weight: 300; }
+#music .music2 #fmList li .musicRight { position: absolute; width: 5px; height: 21px; border-radius: 0; margin: 0; right: 15px; top: 15px; }
+#music .music2 #fmList .selected { background: #0e2c7a; }
+
+@keyframes myfirst { from { transform: translate(-50%, -50%) rotate(360deg); -ms-transform: translate(-50%, -50%) rotate(360deg); -webkit-transform: translate(-50%, -50%) rotate(360deg); -o-transform: translate(-50%, -50%) rotate(360deg); -moz-transform: translate(-50%, -50%) rotate(360deg); }
+  to { transform: translate(-50%, -50%) rotate(0deg); -ms-transform: translate(-50%, -50%) rotate(0deg); -webkit-transform: translate(-50%, -50%) rotate(0deg); -o-transform: translate(-50%, -50%) rotate(0deg); -moz-transform: translate(-50%, -50%) rotate(0deg); } }
+@-moz-keyframes myfirst { from { transform: translate(-50%, -50%) rotate(360deg); -ms-transform: translate(-50%, -50%) rotate(360deg); -webkit-transform: translate(-50%, -50%) rotate(360deg); -o-transform: translate(-50%, -50%) rotate(360deg); -moz-transform: translate(-50%, -50%) rotate(360deg); }
+  to { transform: translate(-50%, -50%) rotate(0deg); -ms-transform: translate(-50%, -50%) rotate(0deg); -webkit-transform: translate(-50%, -50%) rotate(0deg); -o-transform: translate(-50%, -50%) rotate(0deg); -moz-transform: translate(-50%, -50%) rotate(0deg); } }
+@-webkit-keyframes myfirst { from { transform: translate(-50%, -50%) rotate(360deg); -ms-transform: translate(-50%, -50%) rotate(360deg); -webkit-transform: translate(-50%, -50%) rotate(360deg); -o-transform: translate(-50%, -50%) rotate(360deg); -moz-transform: translate(-50%, -50%) rotate(360deg); }
+  to { transform: translate(-50%, -50%) rotate(0deg); -ms-transform: translate(-50%, -50%) rotate(0deg); -webkit-transform: translate(-50%, -50%) rotate(0deg); -o-transform: translate(-50%, -50%) rotate(0deg); -moz-transform: translate(-50%, -50%) rotate(0deg); } }
+@-o-keyframes myfirst { from { transform: translate(-50%, -50%) rotate(360deg); -ms-transform: translate(-50%, -50%) rotate(360deg); -webkit-transform: translate(-50%, -50%) rotate(360deg); -o-transform: translate(-50%, -50%) rotate(360deg); -moz-transform: translate(-50%, -50%) rotate(360deg); }
+  to { transform: translate(-50%, -50%) rotate(0deg); -ms-transform: translate(-50%, -50%) rotate(0deg); -webkit-transform: translate(-50%, -50%) rotate(0deg); -o-transform: translate(-50%, -50%) rotate(0deg); -moz-transform: translate(-50%, -50%) rotate(0deg); } }
+#call { width: 1080px; height: 1920px; position: absolute; overflow: hidden; }
+#call #callTip { width: 612px; height: 80px; margin-left: -306px; }
+#call #numberCall, #call #listCall { position: absolute; width: 1080px; top: 255px; }
+#call #numberCall h2, #call #listCall h2 { width: 100%; text-align: center; color: #fff; font-size: 30px; font-weight: 300; display: none; }
+#call #numberCall h3, #call #listCall h3 { position: absolute; width: 100%; text-align: center; color: #878ea1; font-size: 30px; font-weight: 300; top: 480px; }
+#call #numberCall h4, #call #listCall h4 { position: absolute; width: 100%; text-align: center; color: #fff; font-size: 32px; font-weight: 300; top: 520px; }
+#call #numberCall .headList, #call #listCall .headList { position: absolute; width: 5000px; height: 440px; top: 140px; left: -100px; }
+#call #numberCall .headList .headBox, #call #listCall .headList .headBox { float: left; width: 255px; height: 255px; display: block; position: relative; opacity: 0.2; }
+#call #numberCall .headList .headBox img, #call #listCall .headList .headBox img { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0.7); -webkit-transform: translate(-50%, -50%) scale(0.7); -moz-transform: translate(-50%, -50%) scale(0.7); }
+#call #numberCall .headList .selected, #call #listCall .headList .selected { transform: scale(1.3); -webkit-transform: scale(1.3); -moz-transform: scale(1.3); opacity: 1; z-index: 10; }
+#call #numberCall .callBtn .btn, #call #listCall .callBtn .btn { position: absolute; top: 640px; z-index: 10; left: 50%; margin-left: -50px; }
+#call #numberCall .numberList, #call #listCall .numberList { width: 600px; position: absolute; left: 50%; margin-left: -300px; top: 900px; z-index: 100; }
+#call #numberCall .numberList ul, #call #listCall .numberList ul { width: 100%; float: left; }
+#call #numberCall .numberList ul li, #call #listCall .numberList ul li { list-style: none; width: 190px; float: left; margin-left: 10px; margin-top: 10px; border-radius: 10px; height: 70px; line-height: 70px; color: #fff; font-size: 36px; text-align: center; border: 1px solid #10214c; background: #0b132b; }
+#call #numberCall .numberList ul li:active, #call #listCall .numberList ul li:active { background: #06ac88; }
+#call #numberCall .numberList ul .play, #call #listCall .numberList ul .play { background: #06ac88; width: 390px; }
+#call #listCall { display: none; }
+#call #listCall .headList { left: 410px; }
+#call #listCall #numberBk { width: 1080px; height: 500px; position: absolute; top: 0; left: 0; z-index: 100; }
+#call #listCall .userList { width: 850px; position: absolute; top: 880px; left: 115px; z-index: 100; height: 460px; overflow: hidden; }
+#call #listCall .userList h1 { font-size: 30px; width: 100%; float: left; line-height: 30px; text-align: center; color: #535e7c; }
+#call #listCall .userList ul { width: 850px; float: left; height: 430px; }
+#call #listCall .userList ul li { list-style: none; height: 66px; background: rgba(0, 0, 0, 0.3); width: 850px; float: left; margin-top: 5px; font-family: stringFont; position: relative; }
+#call #listCall .userList ul li img { width: 40px; float: left; height: 40px; margin: 13px; }
+#call #listCall .userList ul li h5 { width: 70%; float: left; font-size: 20px; color: #fff; line-height: 20px; font-weight: 300; margin-top: 15px; margin-left: 20px; }
+#call #listCall .userList ul li h6 { width: 70%; float: left; font-size: 18px; color: #576484; line-height: 18px; font-weight: 300; margin-top: 3px; margin-left: 18px; }
+#call #listCall .userList ul li span { color: #fff; position: absolute; font-size: 20px; line-height: 60px; right: 20px; }
+#call #listCall .userList ul .selected { background: #0e2c7a; }
+#call #callBk { position: absolute; width: 440px; height: 440px; left: 50%; margin-left: -220px; top: 300px; display: none; }
+#call #callRund1 { position: absolute; top: 1034px; }
+#call .callRund2 { width: 1080px; position: absolute; top: 680px; }
+
+
+
+/*# sourceMappingURL=maps/pageStyle.css.map */

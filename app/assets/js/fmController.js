@@ -6,21 +6,21 @@ var FmController = (function(){
 		var fmBox = $("#fmBox");
 		var fmIndex=0;
 		var fmList = [
-			["AAAAAAAAA",89.8,"5.3%"],
-			["BBBBBBBBB",92.2,"26%"],
-			["CCCCCCCCC",92.4,"27.7%"],
-			["DDDDDDDDD",92.6,"31.2%"],
-			["EEEEEEEEE",93.8,"39.8%"],
-			["FFFFFFFFF",94.6,"46.7%"],
-			["HHHHHHHHH",96.4,"62.1%"],
-			["JJJJJJJJJ",98.2,"77.7%"],
-			["QQQQQQQQQ",99.4,"88%"],
-			["EEEEEEEEE",99.8,"91.6%"]
+			["Lounge Radio",89.8,"5.3%"],
+			["Radio Eksen",92.2,"26%"],
+			["Radio Alaturca",92.4,"27.7%"],
+			["FG Radio",92.6,"31.2%"],
+			["Power FM",93.8,"39.8%"],
+			["Serxy Chair ",94.6,"46.7%"],
+			["Stay Close",96.4,"62.1%"],
+			["Reptile",98.2,"77.7%"],
+			["No Waves",99.4,"88%"],
+			["Rreeman Town",99.8,"91.6%"]
 		]
 		fm.initList = function(){
 			var str=""
 			for (var i=0;i<fmList.length;i++) {
-				str+='<li><p>0'+i+'</p>'
+				str+='<li>'
 				str+='<span>'+fmList[i][0]+'</span>'
 				str+='<h3>'+fmList[i][1]+'</h3></li>'			
 			}

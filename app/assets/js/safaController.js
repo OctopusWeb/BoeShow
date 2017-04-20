@@ -8,12 +8,14 @@ var SafaController = (function(){
 				if(tipBol){
 					$("#safa2").fadeIn();
 					$("#safa1").fadeOut();
+					$("#xsp").fadeOut();
 					$("#safaTip .tipTitle").animate({"left":"50%"})
 					$("#safaTip .tipTitle").eq(0).hide();
 					$("#safaTip .tipTitle").eq(1).show();
 				}else{
 					$("#safa2").fadeOut();
 					$("#safa1").fadeIn();
+					$("#xsp").fadeIn();
 					$("#safaTip .tipTitle").animate({"left":"0%"});
 					$("#safaTip .tipTitle").eq(1).hide();
 					$("#safaTip .tipTitle").eq(0).show();

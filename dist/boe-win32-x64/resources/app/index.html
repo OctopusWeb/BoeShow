@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>BOE多媒体展项</title>
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" href="assets/css/pageStyle.css" />
+	</head>
+	<body oncontextmenu="return false" onselectstart="return false">
+		<div id="wrap">
+			<div id="top">
+				<div id="escBtn">
+					<img src="assets/img/top/esc-hover.png" />
+					<img src="assets/img/top/esc.png" class="selected"/>
+				</div>
+				<div id="homeBtn">
+					<img src="assets/img/top/home2.png" />
+					<img src="assets/img/top/home1.png" class="selected"/>
+				</div>
+				<div id="timeInfo">
+					<div id="dayTime">2017-03-25</div>
+					<div id="week">TUES</div>
+				</div>
+				<div id="power">
+					<ul>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+						<li><img src="assets/img/top/power1.png"/></li>
+					</ul>
+					<ul id="powerImg">
+						<li><img src="assets/img/top/power2.png"/></li>
+						<li><img src="assets/img/top/power2.png"/></li>
+						<li><img src="assets/img/top/power2.png"/></li>
+						<li><img src="assets/img/top/power2.png"/></li>
+						<li><img src="assets/img/top/power2.png"/></li>
+						<li><img src="assets/img/top/power2.png"/></li>
+						<li><img src="assets/img/top/power2.png"/></li>
+					</ul>
+					<p>90%</p>
+					<span>27℃</span>
+				</div>
+				<img src="assets/img/top/title.png" class="bk" ondragstart="return false;"/>
+			</div>
+			<div id="content">
+				<div id="home" class="page">
+					<img src="assets/img/top/bk.png" id="bk"/>
+					<div id="carName">
+						<img src="assets/img/top/carName.png"/>
+					</div>
+					<div id="carTitle">
+						<img src="assets/img/top/carTitle.png"/>
+						<div id="carNum">
+							<p>0℃</p>
+							<p class="carNext">0℃</p>
+						</div>
+						<div class="proBar">
+							<p>0</p>
+							<div class="box">
+								<div class="bar"></div>
+							</div>
+						</div>
+						<div class="proBar">
+							<p>0</p>
+							<div class="box">
+								<div class="bar"></div>
+							</div>
+						</div>
+						<div class="proBar">
+							<p>0</p>
+							<div class="box">
+								<div class="bar"></div>
+							</div>
+						</div>
+					</div>
+					<div id="carBottomImg">
+					</div>
+					<div id="carPic">
+						<canvas id="carCanvas" width="1620" height="900"></canvas>
+					</div>
+					<div id="carBkPic">
+						<canvas id="carBkCanvas" width="1080" height="300"></canvas>
+					</div>
+					<div id="carBk"></div>
+					<div id="carPower">
+						<p>0%</p>
+						<p id="carnext">100%</p>
+						<span>0%</span>
+						<div id="powerBar">
+							<div class="powerBar1 powerBar">
+								<img src="assets/img/top/powerbK1.png"/>
+							</div>
+							<div class="powerBar2 powerBar"></div>
+							<div class="powerBar3 powerBar">
+								<img src="assets/img/top/powerbK2.png"/>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="music" class="page">
+					<div class="music1 music">
+						<h1 id="musicName">SONG OF THE GREAT WIND</h1>
+						<h2 id="musicUser">Anstasia</h2>
+						<div id="music1Box">
+							<div id="event"></div>
+							<div class="box">
+								<img src="assets/img/music/musicBk.png" class="musicBottom musicImg"/>
+								<img src="assets/img/music/musicRound1.png" class="musicRound musicImg musicPause"/>
+								<img src="assets/img/music/head3.png" class="head musicImg"/>
+								<img src="assets/img/music/musicBk2.png" class="musicTop musicImg"/>
+							</div>
+							<div class="box">
+								<canvas id="musicBk" width="1080" height="570"></canvas> 
+							</div>
+						</div>
+						<div id="musicPro">
+							<div class="roundBk selected"></div>
+							<div class="roundBk"></div>
+						</div>
+						<div id="musicInfo">
+							<p>00:00:00</p>
+							<div class="proBar">
+								<div class="barBk"></div>
+								<div class="bar">
+									<img src="assets/img/music/bar.png"/>
+								</div>
+							</div>
+							<span>00:03:00</span>
+						</div>
+						<div id="musicController">
+							<div class="random">
+								<img src="assets/img/music/random2.png"/>
+								<img src="assets/img/music/random1.png" class="selected"/> 
+							</div>
+							<div class="pre">
+								<img src="assets/img/music/pre2.png"/>
+								<img src="assets/img/music/pre1.png" class="selected"/> 
+							</div>
+							<div class="pause">
+								<img src="assets/img/music/pause2.png"/>
+								<img src="assets/img/music/pause1.png" class="selected"/> 
+							</div>
+							<div class="play">
+								<img src="assets/img/music/play2.png"/>
+								<img src="assets/img/music/play1.png" class="selected"/> 
+							</div>
+							<div class="next">
+								<img src="assets/img/music/next2.png"/>
+								<img src="assets/img/music/next1.png" class="selected"/> 
+							</div>
+							<div class="xunhuan">
+								<img src="assets/img/music/xunhuan2.png"/>
+								<img src="assets/img/music/xunhuan1.png" class="selected"/> 
+							</div>
+						</div>
+						<div id="musicList">
+							<h1>PLAY QUEUE</h1>
+							<div id="musicListbox">
+								<ul>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="music2 music">
+						<h1>AAAAAAAAAA</h1>
+						<div id="fmBox">
+							<h2>94.5</h2>
+							<img src="assets/img/music/fmBk.png" class="fmbk"/>
+							<img src="assets/img/music/musicRound2.png" class="musicRound2 musicPause"/>
+						</div>
+						<div id="fmGroup">
+							<img src="assets/img/music/fmNumber.png" class="fmNumber"/>
+							<div class="fmBtn">
+								<img src="assets/img/music/fmBtn.png"/>
+							</div>
+						</div>
+						<div id="fmControler">
+							<div class="pre">
+								<img src="assets/img/music/pre2.png"/>
+								<img src="assets/img/music/pre1.png" class="selected"/>
+							</div>
+							<div class="stop">
+								<img src="assets/img/music/stop1.png"/>
+								<img src="assets/img/music/stop2.png" class="selected"/>
+							</div>
+							<div class="play">
+								<img src="assets/img/music/play2.png"/>
+								<img src="assets/img/music/play1.png" class="selected"/> 
+							</div>
+							<div class="next">
+								<img src="assets/img/music/next2.png"/>
+								<img src="assets/img/music/next1.png" class="selected"/>
+							</div>
+						</div>
+						<div id="fmList">
+							<h1>STATIONS</h1>
+							<ul>
+							</ul>
+						</div>
+					</div>
+					<img src="assets/img/music/round.png" class="round"/>
+					<div class="tipBtn" id="musicTip">
+						<img src="assets/img/music/music1.png" class="tipBk"/>
+						<img src="assets/img/music/musicbtn1.png" class="tipTitle selected"/>
+						<img src="assets/img/music/musicbtn2.png" class="tipTitle"/>
+					</div>
+				</div>
+				<div id="location" class="page">
+					<video width="1080" height="1920" id="locationVideo"  autoplay="autoplay" loop="loop">
+						<source src="assets/video/location.mp4" type="video/mp4"></source>
+						当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+					</video>
+				</div>
+				<div id="data" class="page">
+					<div id="data1" class="data">
+						<img src="assets/img/data/data1Bk.png" class="data1Bk"/>
+						<ul>
+							<li><p>6:35<strong>PM</strong></p></li>
+							<li><p>1200<strong>KM</strong></p></li>
+							<li><p>12:54:01<strong>H</strong></p></li>
+							<li><p>6:35<strong>PM</strong></p></li>
+							<li><p>12<strong>L/KM</strong></p></li>
+							<li><p>120<strong>TIMES</strong></p></li>
+							<li><p>4<strong>TIMES</strong></p></li>
+						</ul>
+						<img src="assets/img/data/round1.png" class="round1"/>
+						<img src="assets/img/data/round2.png" class="round2"/>
+						<div class="dataInfo">
+							<div class="o1">
+								<p>TODAY</p>
+								<img src="assets/img/data/o3.png"/>
+								<img src="assets/img/data/o1.png" class="o"/>
+							</div>
+							<div class="o2 selected">
+								<p>THIS WEEK</p>
+								<img src="assets/img/data/o3.png"/>
+								<img src="assets/img/data/o1.png"  class="o"/>
+							</div>
+							<div class="o3">
+								<p>THIS MONTH</p>
+								<img src="assets/img/data/o3.png"/>
+								<img src="assets/img/data/o1.png"  class="o"/>
+							</div>
+						</div>
+						<div class="dataList">
+							<img src="assets/img/data/dataList.png"/>
+							<p>180<strong>KM</strong></p>
+							<p>5:30<strong>H</strong></p>
+							<p>60<strong>KM/H</strong></p>
+						</div>
+					</div>
+					<div id="data2" class="data">
+						<img src="assets/img/data/data2Bk.png" class="data1Bk"/>
+						<ul>
+							<li><p>12<strong>TIMES</strong></p></li>
+							<li><p>36<strong>TIMES</strong></p></li>
+							<li><p>6<strong>TIMES</strong></p></li>
+							<li><p>11<strong>TIMES</strong></p></li>
+							<li><p>12<strong>TIMES</strong></p></li>
+							<li><p>36<strong>TIMES</strong></p></li>
+							<li><p>6<strong>TIMES</strong></p></li>
+							<li><p>11<strong>TIMES</strong></p></li>
+						</ul>
+						<img src="assets/img/data/round1.png" class="round1"/>
+						<img src="assets/img/data/round2.png" class="round2"/>
+						<div class="dataInfo">
+							<div class="o1">
+								<p>TODAY</p>
+								<img src="assets/img/data/o3.png"/>
+								<img src="assets/img/data/o1.png" class="o"/>
+							</div>
+							<div class="o2 selected">
+								<p>THIS WEEK</p>
+								<img src="assets/img/data/o3.png"/>
+								<img src="assets/img/data/o1.png"  class="o"/>
+							</div>
+							<div class="o3">
+								<p>THIS MONTH</p>
+								<img src="assets/img/data/o3.png"/>
+								<img src="assets/img/data/o1.png"  class="o"/>
+							</div>
+						</div>
+						<div class="dataList">
+							<img src="assets/img/data/data2List.png"/>
+							<p style="color: #03723f;">180<strong>KM</strong></p>
+							<p style="color: #668f27;">180<strong>KM</strong></p> 
+							<p style="margin-top: 35px;color: #b8af12;">180<strong>KM</strong></p>
+							<p style="margin-top: 35px;color: #aa7215;">180<strong>KM</strong></p>
+							<p style="margin-top: 40px;color: #a2050e;">180<strong>KM</strong></p>
+							<p style="margin-top: 40px;color: #9b5160;">180<strong>KM</strong></p>
+							<p style="margin-top: 45px;color: #038aba;">5:30<strong>H</strong></p>
+							<p style="margin-top: 45px;color: #188a95;">60<strong>KM/H</strong></p>
+						</div>
+					</div>
+					<div class="tipBtn" id="dataTip">
+						<img src="assets/img/data/1.png" class="tipBk"/>
+						<img src="assets/img/data/btn1.png" class="tipTitle selected"/>
+						<img src="assets/img/data/btn2.png" class="tipTitle"/>
+					</div>
+				</div>
+				<div id="form" class="page">
+					<video width="250" height="160" id="xsp"  autoplay="autoplay" loop="loop">
+						<source src="assets/video/XSP.mp4" type="video/mp4"></source>
+					</video>
+					<video width="1080" height="1920" id="safa2"  autoplay="autoplay" loop="loop">
+						<source src="assets/video/safa2.mp4" type="video/mp4"></source>
+					</video>
+					<video width="1080" height="1920" id="safa1"  autoplay="autoplay" loop="loop">
+						<source src="assets/video/safa1.mp4" type="video/mp4"></source>
+					</video>
+					<div class="tipBtn" id="safaTip">
+						<img src="assets/img/safa/1.png" class="tipBk"/>
+						<img src="assets/img/safa/btn2.png" class="tipTitle selected"/>
+						<img src="assets/img/safa/btn1.png" class="tipTitle"/>
+					</div>
+				</div>
+				<div id="call" class="page">
+					<div id="numberCall">
+						
+						<div class="callBox">
+							<h2>Dialing......</h2>
+							<div class="headList">
+								<div class="headBox">
+									<img src="assets/img/call/headBk.png"/>
+								</div>
+								<div class="headBox">
+									<img src="assets/img/call/headBk.png"/>
+								</div>
+								<div class="headBox selected">
+									<img src="assets/img/call/headBk.png"/>
+									<img src="assets/img/call/head3.png"/>
+								</div>
+								<div class="headBox">
+									<img src="assets/img/call/headBk.png"/>
+								</div>
+								<div class="headBox">
+									<img src="assets/img/call/headBk.png"/>
+								</div>
+							</div>
+							<h3></h3>
+							<h4></h4>
+						</div>
+						<div class="callBtn">
+							<img src="assets/img/call/stop.png" class="btn stop"/>
+							<img src="assets/img/call/play.png" class="btn play"/>
+							<img src="assets/img/call/round2.png" class="callRund2"/>
+						</div>
+						<div class="numberList">
+							<ul>
+								<li>1</li>
+								<li>2</li>
+								<li>3</li>
+								<li>4</li>
+								<li>5</li>
+								<li>6</li>
+								<li>7</li>
+								<li>8</li>
+								<li>9</li>
+								<li>*</li>
+								<li>0</li>
+								<li>#</li>
+								<li class="play" id="callBtn"><img src="assets/img/call/play2.png"/></li>
+								<li class="delete" id="deleteBtn"><img src="assets/img/call/delete.png"/></li>
+							</ul>
+						</div>
+					</div>
+					<div id="listCall">
+						<div class="callBox">
+							<h2>Dialing......</h2>
+							<div id="numberBk"></div>
+							<div class="headList">
+								<div class="headBox selected">
+									<img src="assets/img/call/headBk.png"/>
+									<img src="assets/img/call/head1.png"/>
+								</div>
+								<div class="headBox">
+									<img src="assets/img/call/headBk.png"/>
+									<img src="assets/img/call/head2.png"/>
+								</div>
+								<div class="headBox">
+									<img src="assets/img/call/headBk.png"/>
+									<img src="assets/img/call/head3.png"/>
+								</div>
+								<div class="headBox">
+									<img src="assets/img/call/headBk.png"/>
+									<img src="assets/img/call/head4.png"/>
+								</div>
+								<div class="headBox">
+									<img src="assets/img/call/headBk.png"/>
+									<img src="assets/img/call/head5.png"/>
+								</div>
+								<div class="headBox">
+									<img src="assets/img/call/headBk.png"/>
+									<img src="assets/img/call/head6.png"/>
+								</div>
+							</div>
+							<h3></h3>
+							<h4></h4>
+						</div>
+						<div class="callBtn">
+							<img src="assets/img/call/stop.png" class="btn stop"/>
+							<img src="assets/img/call/play.png" class="btn play"/>
+							<img src="assets/img/call/round2.png" class="callRund2"/>
+						</div>
+						<div class="userList">
+							<h1>CONTACTS</h1>
+							<ul>
+								
+							</ul>
+						</div>
+					</div>
+					<img src="assets/img/call/round.png" id="callRund1"/>
+					<canvas id="callBk" width="440" height="440"></canvas>
+					<div class="tipBtn" id="callTip">
+						<img src="assets/img/call/1.png" class="tipBk"/>
+						<img src="assets/img/call/btn2.png" class="tipTitle selected"/>
+						<img src="assets/img/call/btn1.png" class="tipTitle"/>
+					</div>
+				</div>
+			</div>
+			<div id="menu">
+				<img src="assets/img/top/menu.png"/>
+				<ul>
+					<li name="music"></li>
+					<li name="location"></li>
+					<li name="data"></li>
+					<li name="form"></li>
+					<li name="call"></li>
+				</ul>
+			</div>
+		</div>
+		<div id="setScreen">
+			<img src="assets/img/top/1.jpg"/>
+		</div>
+	</body>
+	<script>
+		window.nodeRequire = require;
+		delete window.require;
+		delete window.exports;
+		delete window.module;
+	</script>
+	<script type="text/javascript" src="assets/js/bin/jquery.min.js" ></script>
+	<script type="text/javascript" src="assets/js/bin/hammer.min.js" ></script>
+	<script type="text/javascript" src="assets/js/publicController.js"></script>
+	
+	<script  type="text/javascript" src="assets/js/initController.js"></script>
+	
+	<script  type="text/javascript" src="assets/js/homeController.js"></script>
+	<script  type="text/javascript" src="assets/js/musicController.js"></script>
+	<script  type="text/javascript" src="assets/js/fmController.js"></script>
+	<script  type="text/javascript" src="assets/js/dataController.js"></script>
+	<script  type="text/javascript" src="assets/js/safaController.js"></script>
+	<script  type="text/javascript" src="assets/js/callController.js"></script> 
+	
+</html>
